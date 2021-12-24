@@ -3,6 +3,31 @@
   padding: 0px;
 }
 
+/* FUENTES */
+
+.title {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  color: #006699;
+}
+.titleThree {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  color: #ffcf06;
+}
+.titleTwo {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  color: #fff;
+}
+
+.quote {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+  margin: 0 0 20px;
+}
+
+/* LANDING PAGE */
 .landingpage {
   display: flex;
   min-height: 100vh;
@@ -12,9 +37,9 @@
   background: url(./files/mobileimg.jpg) no-repeat center center;
 }
 
-.headerGradient {
+.headergradient {
   max-width: 100vw;
-  height: 475px;
+  height: 471px;
   display: grid;
   place-items: center;
   place-content: center;
@@ -35,6 +60,24 @@
   );
 }
 
+.headerGradientMenuOpen {
+  max-width: 100vw;
+  height: 471px;
+  display: grid;
+  place-items: center;
+  place-content: center;
+
+  background: linear-gradient(
+    90deg,
+    hsla(208, 97%, 30%, 0.5) 0%,
+    hsla(200, 100%, 30%, 0.5) 0%,
+    hsla(135, 21%, 44%, 0.5) 54%,
+    hsla(108, 21%, 46%, 0.5) 61%,
+    hsla(51, 79%, 48%, 0.5) 99%,
+    hsla(48, 100%, 51%, 0.5) 99%
+  );
+}
+
 .logocontainer {
   max-width: 100vw;
   display: grid;
@@ -50,6 +93,7 @@
   transform: translate(-50%, -90%);
 }
 
+/* EMAIL CALL TO ACTION BANNER  */
 #emailcalltoaction {
   background-color: #006699;
   color: #fff;
@@ -62,6 +106,7 @@
   line-height: 35px;
 }
 
+/* QUIEN SOY */
 .paragraphImage {
   background: url(./files/quiensoy.jpg) no-repeat center center;
   height: 300px;
@@ -88,17 +133,24 @@
   padding: 0 0 20px;
 }
 
-.title {
-  font-family: "Roboto", sans-serif;
-  font-size: 40px;
-  color: #006699;
+.carouselimg {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 
-.quote {
-  font-family: "Nunito", sans-serif;
-  font-size: 1.2rem;
-  margin: 0 0 20px;
+/* BOOTSTRAP EDITS */
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 102, 153, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
+.navbar-dark .navbar-toggler {
+  border: rgba(0, 102, 153, 1);
+}
+
+/* .navbar-dark .navbar-toggler {
+  border: none;
+} */
 
 /* * {
   background: #000 !important;

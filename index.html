@@ -15,34 +15,34 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+            <div class="container">
+                <a class="navbar-brand text-white" href="#">CL Luis Diego</a>
+                <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+        <!-- NAVBAR -->
                 <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mx-auto"></div>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link text-white titleTwo" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link text-white titleTwo" href="#">Quien Soy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            <a class="nav-link text-white titleTwo" href="#">Blog</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+        <!-- GRADIENT & MOBILE LANDING IMGS -->
         <div>
             <div class="headercontainer">
-                <div class="headerGradient "></div>
+                <div class="gradientOverlay headergradient"></div>
             </div>
             <div class="logocontainer">
                 <img src="./files/Logo_Campana_300x220.png" alt="Luis Diego Logo" class="landinglogo">
@@ -50,7 +50,7 @@
         </div>    
     </header>
     <div id="emailcalltoaction" >
-        <div class="pt-4 d-flex flex-column display-column align-items-center justify-content-center">
+        <div class="pt-4 d-flex flex-column display-column align-items-center justify-content-center titleTwo">
             <h2>Expandamos <span class="text-warning">Juntos</span> el</h2> 
             <h2>¡Orgullo de Ser León!</h2>
             <!-- <h6>Regístrate para recibir noticias y actualizaciones </h6> -->
@@ -76,7 +76,7 @@
         </div>
         <div class="quoteparagraph">
             <div>
-                <h1 class="title">QUIÉN SOY</h1>
+                <h1 class="title">QUIEN SOY</h1>
             </div>
             <div class="m-4">
                 <p class="quote">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illum aliquid cupiditate. Cum, deleniti
@@ -84,25 +84,26 @@
                 <p class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illum aliquid cupiditate. Cum, deleniti nobis
                     eligendi fuga consequatur explicabo ut!"
                 </p>
-                <h3>Luis Diego Aguilar</h3>
+                <h3>-Luis Diego Aguilar</h3>
             </div>
             <button type="button" class="btn btn-outline-warning m-2">Más sobre mi</button>
         </div>
     </div>
-    <div class="carouseltitle quoteparagraph">
-        <h2 class="title">Una vida dedicada al</h2>
-        <h2>Servicio</h2>
+    <div class="carouseltitle quoteparagraph mt-5">
+        <h2 class="title">Una vida</h2> 
+        <h2 class="title">dedicada al</h2>
+        <h2 class="titleThree">Servicio</h2>
     </div>
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="./files/IMG_4323.jpg" class="d-block w-100 carouselimg" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="./files/Leon2.jpg" class="d-block w-100 carouselimg" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
+                <img src="./files/Leon3.jpg" class="d-block w-100 carouselimg" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -118,5 +119,32 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var nav = document.querySelector('nav');
+        var hamburgerBtn = document.querySelector('.navbar-toggler');
+        var headerGradientOverlay = document.querySelector('.gradientOverlay');
+
+            window.addEventListener('scroll', function () {
+                if (window.pageYOffset > 100) {
+                    nav.classList.add('bg-dark', 'shadow');
+                } else {
+                    nav.classList.remove('bg-dark', 'shadow');
+                }
+            });
+
+            hamburgerBtn.addEventListener('click', function () {
+                if (headerGradientOverlay.classList.contains('headergradient')) {
+                    headerGradientOverlay.classList.add('headerGradientMenuOpen')
+                    headerGradientOverlay.classList.remove('headergradient')
+                    console.log("it works!")
+                } else {
+                    headerGradientOverlay.classList.remove('headerGradientMenuOpen')
+                    headerGradientOverlay.classList.add('headergradient')
+                    console.log("Second click works!")
+                }
+            });
+
+
+    </script>
 </body>
 </html>
