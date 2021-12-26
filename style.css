@@ -31,27 +31,13 @@
 .brandfont {
   font-family: SignPainter;
   font-size: 30px;
-  background: linear-gradient(
-    90deg,
-    hsla(208, 97%, 30%, 1) 0%,
-    hsla(200, 100%, 30%, 1) 0%,
-    hsla(135, 21%, 44%, 1) 54%,
-    hsla(108, 21%, 46%, 1) 61%,
-    hsla(51, 79%, 48%, 1) 99%,
-    hsla(48, 100%, 51%, 1) 99%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #fff;
 }
 
 .quote {
   font-family: "Nunito", sans-serif;
   font-size: 1.2rem;
   margin: 0 0 20px;
-}
-
-.brandlogo {
-  margin-left: 0.75rem;
 }
 
 /* LANDING PAGE */
@@ -169,6 +155,17 @@
   background-position: center;
 }
 
+/* FOOTER */
+
+#footersection {
+  height: 80vh;
+  width: 100vw;
+  background-color: #006699;
+}
+
+.footerlist {
+  list-style-type: none;
+}
 /* BOOTSTRAP EDITS */
 
 .navbar-dark .navbar-toggler-icon {
@@ -182,20 +179,6 @@
   width: 100vw;
   height: 100vh;
   margin-right: 100px;
-
-  background: linear-gradient(
-    90deg,
-    hsla(208, 97%, 30%, 0.8) 0%,
-    hsla(200, 100%, 30%, 0.8) 0%,
-    hsla(135, 21%, 44%, 0.8) 54%,
-    hsla(108, 21%, 46%, 0.8) 61%,
-    hsla(51, 79%, 48%, 0.8) 99%,
-    hsla(48, 100%, 51%, 0.8) 99%
-  );
-}
-
-.container {
-  padding: 0;
 }
 
 /* * {
