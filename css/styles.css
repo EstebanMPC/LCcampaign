@@ -1,0 +1,258 @@
+@font-face {
+  src: url(../font/SignPainter\ HouseScript\ Regular.ttf);
+  font-family: SignPainter;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* FUENTES */
+
+.title {
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  color: #006699;
+  font-weight: 600;
+}
+.carouseltitle {
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  color: #fff;
+  font-weight: 600;
+}
+.titleThree {
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+}
+.mobilemenufont {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.brandfont {
+  font-family: SignPainter;
+  font-size: 30px;
+  color: #fff;
+}
+
+.quote {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.2rem;
+  margin: 0 0 20px;
+}
+
+/* LANDING PAGE */
+.landingpage {
+  display: flex;
+  min-height: 100vh;
+}
+
+.headercontainer {
+  background: url(../img/mobileimg.jpg) no-repeat center center !important
+  ;
+  margin-top: 70px;
+}
+
+.headergradient {
+  max-width: 100vw;
+  height: 471px;
+  display: grid;
+  place-items: center;
+  place-content: center;
+
+  background: linear-gradient(
+    90deg,
+    hsla(208, 97%, 30%, 1) 0%,
+    hsla(200, 100%, 30%, 1) 0%,
+    hsla(135, 21%, 44%, 1) 54%,
+    f hsla(108, 21%, 46%, 1) 61%,
+    hsla(51, 79%, 48%, 1) 99%,
+    hsla(48, 100%, 51%, 1) 99%
+  );
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    transparent 45%,
+    rgb(0, 0, 0) 100%
+  );
+}
+
+.headerGradientMenuOpen {
+  max-width: 100vw;
+  height: 471px;
+  display: grid;
+  place-items: center;
+  place-content: center;
+}
+
+.logocontainer {
+  max-width: 100vw;
+  display: grid;
+  place-items: center;
+  place-content: center;
+}
+
+.landinglogo {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  position: absolute;
+  transform: translate(-50%, -90%);
+}
+
+/* EMAIL CALL TO ACTION BANNER  */
+
+#emailcalltoaction {
+  background-color: #006699;
+  color: #fff;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+}
+
+.mobileparagraph {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  line-height: 35px;
+}
+
+/* QUIEN SOY */
+.paragraphImage {
+  background: url(../img/quiensoy) no-repeat center center;
+  height: 300px;
+}
+
+.paragraphcontainer {
+  max-width: 100vw;
+  height: 475px;
+  display: grid;
+  place-items: center;
+  place-content: center;
+  background: linear-gradient(
+    360deg,
+    #ffffff 33.4%,
+    rgba(255, 255, 255, 0.961265) 48.23%,
+    rgba(255, 255, 255, 0.815448) 58.4%,
+    rgba(255, 255, 255, 0.471765) 66.18%,
+    rgba(255, 255, 255, 0) 72.85%
+  );
+  z-index: 2;
+}
+
+/* CAROUSEL SECTION */
+
+.carouselgradient {
+  max-width: 100vw;
+  height: 100px;
+  display: grid;
+  place-items: center;
+  place-content: center;
+
+  background: linear-gradient(
+    90deg,
+    hsla(208, 97%, 30%, 0.8) 0%,
+    hsla(200, 100%, 30%, 0.8) 0%,
+    hsla(135, 21%, 44%, 0.8) 54%,
+    hsla(108, 21%, 46%, 0.8) 61%,
+    hsla(51, 79%, 48%, 0.8) 99%,
+    hsla(48, 100%, 51%, 0.8) 99%
+  );
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    transparent 5%,
+    rgb(0, 0, 0) 100%
+  );
+}
+
+#carouselsection {
+  max-width: 100vw;
+  height: 600px;
+  display: grid;
+  place-items: center;
+  place-content: center;
+
+  background: linear-gradient(
+    90deg,
+    hsla(208, 97%, 30%, 0.8) 0%,
+    hsla(200, 100%, 30%, 0.8) 0%,
+    hsla(135, 21%, 44%, 0.8) 54%,
+    hsla(108, 21%, 46%, 0.8) 61%,
+    hsla(51, 79%, 48%, 0.8) 99%,
+    hsla(48, 100%, 51%, 0.8) 99%
+  );
+}
+
+.carouselimg {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.carouselsubtitle {
+  display: grid;
+  place-items: center;
+  place-content: center;
+}
+
+.carouselgradientbottom {
+  max-width: 100vw;
+  height: 100px;
+  display: grid;
+  place-items: center;
+  place-content: center;
+
+  background: linear-gradient(
+    90deg,
+    hsla(208, 97%, 30%, 0.8) 0%,
+    hsla(200, 100%, 30%, 0.8) 0%,
+    hsla(135, 21%, 44%, 0.8) 54%,
+    hsla(108, 21%, 46%, 0.8) 61%,
+    hsla(51, 79%, 48%, 0.8) 99%,
+    hsla(48, 100%, 51%, 0.8) 99%
+  );
+  -webkit-mask-image: linear-gradient(0deg, transparent 5%, rgb(0, 0, 0) 100%);
+}
+
+/* FOOTER */
+
+#footersection {
+  height: 80vh;
+  width: 100vw;
+  background-color: #006699;
+}
+
+.footerlist {
+  list-style-type: none;
+}
+
+.bluebackground {
+  background-color: #006699;
+}
+.yellowbackground {
+  background-color: #ffcf06;
+}
+
+/* BOOTSTRAP EDITS */
+
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-dark .navbar-toggler {
+  border: rgba(0, 102, 153, 1);
+}
+
+.navbar-nav {
+  width: 100vw;
+  height: 471px;
+  margin-right: 100px;
+}
+
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
