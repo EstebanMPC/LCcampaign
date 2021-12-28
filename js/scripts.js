@@ -1,4 +1,6 @@
 
+AOS.init();
+
 var nav = document.querySelector('nav');
 var hamburgerBtn = document.querySelector('.navbar-toggler');
 var headerGradientOverlay = document.querySelector('.gradientOverlay');
