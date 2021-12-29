@@ -251,6 +251,11 @@
   margin-right: 100px;
 }
 
+.btn-warning {
+  background-color: #ffcf06;
+  border-color: #ffcf06;
+}
+
 /* * {
   background: #000 !important;
   color: #0f0 !important;
