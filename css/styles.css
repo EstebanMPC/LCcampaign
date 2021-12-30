@@ -267,6 +267,8 @@ ul {
 .btn-warning {
   background-color: #ffcf06;
   border-color: #ffcf06;
+  color: #006699;
+  font-weight: bold;
 }
 
 /* * {
