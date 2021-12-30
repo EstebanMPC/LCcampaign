@@ -12,16 +12,20 @@
 
 .title {
   font-family: "Raleway", sans-serif;
-  font-size: 40px;
+  font-size: 60px;
   color: #006699;
   font-weight: 800;
+  margin: 0px;
+  padding: 0px;
 }
+
 .carouseltitle {
   font-family: "Raleway", sans-serif;
   font-size: 40px;
   color: #fff;
   font-weight: 700;
 }
+
 .titleThree {
   font-family: "Raleway", sans-serif;
   font-size: 40px;
@@ -114,7 +118,7 @@
 }
 
 .mobileparagraph {
-  height: 700px;
+  height: 800px;
   width: 100vw;
   text-align: center;
   line-height: 35px;
@@ -192,12 +196,6 @@
   background-position: center;
 }
 
-.carouselsubtitle {
-  display: grid;
-  place-items: center;
-  place-content: center;
-}
-
 .carouselgradientbottom {
   max-width: 100vw;
   height: 100px;
@@ -217,23 +215,38 @@
   -webkit-mask-image: linear-gradient(0deg, transparent 5%, rgb(0, 0, 0) 100%);
 }
 
-/* FOOTER */
-
-#footersection {
-  height: 80vh;
-  width: 100vw;
-  background-color: #006699;
-}
-
-.footerlist {
-  list-style-type: none;
+.carouselsubtitle {
+  display: grid;
+  place-items: center;
+  place-content: center;
+  text-align: center;
 }
 
 .bluebackground {
   background-color: #006699;
+  width: 302px;
+  margin-right: 50px;
 }
 .yellowbackground {
   background-color: #ffcf06;
+  width: 302px;
+  margin-left: 50px;
+}
+
+/* FOOTER */
+
+#footersection {
+  height: auto;
+  width: 100vw;
+  background-color: #006699;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+ul {
+  list-style-type: none;
 }
 
 /* BOOTSTRAP EDITS */
