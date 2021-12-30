@@ -50,6 +50,15 @@
   margin: 0 0 20px;
 }
 
+.timerfont {
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  color: #006699;
+  font-weight: 800;
+  margin: 0px;
+  padding: 0px;
+}
+
 /* LANDING PAGE */
 .landingpage {
   display: flex;
@@ -270,6 +279,39 @@ ul {
   color: #006699;
   font-weight: bold;
 }
+
+/* #timer {
+  font-size: 5rem;
+  font-weight: bold;
+  padding: 30px;
+} */
+
+.coming-soon {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.countdown {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  font-size: 25px;
+}
+
+.waiting {
+  height: 30vh;
+  margin-top: 100px;
+}
+
+/* .day,
+.hour,
+.minute,
+.second {
+  font-size: 1rem;
+} */
 
 /* * {
   background: #000 !important;
