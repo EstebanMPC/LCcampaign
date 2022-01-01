@@ -117,6 +117,22 @@
   transform: translate(-50%, -90%);
 }
 
+/* SAFARI SUPPORT HOVERING LOGO IN LANDING PAGE */
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    .landinglogo {
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      position: absolute;
+      transform: translate(-50%, -90%);
+      left: 50%;
+      top: 100%;
+      z-index: 100;
+    }
+  }
+}
+
 /* EMAIL CALL TO ACTION BANNER  */
 
 #emailcalltoaction {
@@ -167,12 +183,12 @@
 
   background: linear-gradient(
     90deg,
-    hsla(208, 97%, 30%, 0.8) 0%,
-    hsla(200, 100%, 30%, 0.8) 0%,
-    hsla(135, 21%, 44%, 0.8) 54%,
-    hsla(108, 21%, 46%, 0.8) 61%,
-    hsla(51, 79%, 48%, 0.8) 99%,
-    hsla(48, 100%, 51%, 0.8) 99%
+    hsla(208, 97%, 30%, 0.9) 0%,
+    hsla(200, 100%, 30%, 0.9) 0%,
+    hsla(135, 21%, 44%, 0.9) 54%,
+    hsla(108, 21%, 46%, 0.9) 61%,
+    hsla(51, 79%, 48%, 0.9) 99%,
+    hsla(48, 100%, 51%, 0.9) 99%
   );
   -webkit-mask-image: linear-gradient(
     180deg,
@@ -190,12 +206,12 @@
 
   background: linear-gradient(
     90deg,
-    hsla(208, 97%, 30%, 0.8) 0%,
-    hsla(200, 100%, 30%, 0.8) 0%,
-    hsla(135, 21%, 44%, 0.8) 54%,
-    hsla(108, 21%, 46%, 0.8) 61%,
-    hsla(51, 79%, 48%, 0.8) 99%,
-    hsla(48, 100%, 51%, 0.8) 99%
+    hsla(208, 97%, 30%, 0.9) 0%,
+    hsla(200, 100%, 30%, 0.9) 0%,
+    hsla(135, 21%, 44%, 0.9) 54%,
+    hsla(108, 21%, 46%, 0.9) 61%,
+    hsla(51, 79%, 48%, 0.9) 99%,
+    hsla(48, 100%, 51%, 0.9) 99%
   );
 }
 
@@ -214,12 +230,12 @@
 
   background: linear-gradient(
     90deg,
-    hsla(208, 97%, 30%, 0.8) 0%,
-    hsla(200, 100%, 30%, 0.8) 0%,
-    hsla(135, 21%, 44%, 0.8) 54%,
-    hsla(108, 21%, 46%, 0.8) 61%,
-    hsla(51, 79%, 48%, 0.8) 99%,
-    hsla(48, 100%, 51%, 0.8) 99%
+    hsla(208, 97%, 30%, 0.9) 0%,
+    hsla(200, 100%, 30%, 0.9) 0%,
+    hsla(135, 21%, 44%, 0.9) 54%,
+    hsla(108, 21%, 46%, 0.9) 61%,
+    hsla(51, 79%, 48%, 0.9) 99%,
+    hsla(48, 100%, 51%, 0.9) 99%
   );
   -webkit-mask-image: linear-gradient(0deg, transparent 5%, rgb(0, 0, 0) 100%);
 }
@@ -242,6 +258,10 @@
   margin-left: 50px;
 }
 
+.countdown {
+  margin-top: 70px;
+}
+
 /* FOOTER */
 
 #footersection {
@@ -256,6 +276,11 @@
 
 ul {
   list-style-type: none;
+  padding: 0;
+}
+
+.facebookSVG {
+  width: 70px;
 }
 
 /* BOOTSTRAP EDITS */
@@ -303,7 +328,7 @@ ul {
 
 .waiting {
   height: 30vh;
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 /* .day,

@@ -17,7 +17,7 @@ hamburgerBtn.addEventListener('click', function () {
 
 
 var x = setInterval(function() {
-    var countDate = new Date("April 23, 2022 15:37:25").getTime();
+    var countDate = new Date("April 23, 2022 12:00:00").getTime();
     var now = new Date().getTime();
     var gap = countDate - now;
 
