@@ -289,11 +289,9 @@ ul {
   font-weight: bold;
 }
 
-/* #timer {
-  font-size: 5rem;
-  font-weight: bold;
-  padding: 30px;
-} */
+#timer {
+  width: 100vw;
+}
 
 .coming-soon {
   min-height: 100vh;
@@ -321,17 +319,9 @@ ul {
 .second {
   font-size: 1rem;
 } */
-
-/* * {
+/* 
+* {
   background: #000 !important;
   color: #0f0 !important;
   outline: solid #f00 1px !important;
 } */
-
-/* Iphone 8 */
-@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
-}
-
-/* Iphone X */
-@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-}
