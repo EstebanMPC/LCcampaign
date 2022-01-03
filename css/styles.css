@@ -313,6 +313,11 @@ ul {
   margin-top: 70px;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 /* .day,
 .hour,
 .minute,
