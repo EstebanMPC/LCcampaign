@@ -19,6 +19,15 @@
   padding: 0px;
 }
 
+.trayectoriatitle {
+  font-family: "Raleway", sans-serif;
+  font-size: 50px;
+  color: #006699;
+  font-weight: 800;
+  margin: 0px;
+  padding: 0px;
+}
+
 .carouseltitle {
   font-family: "Raleway", sans-serif;
   font-size: 40px;
@@ -127,7 +136,7 @@
 }
 
 .mobileparagraph {
-  height: 800px;
+  height: auto;
   width: 100vw;
   text-align: center;
   line-height: 35px;
@@ -229,6 +238,7 @@
   place-items: center;
   place-content: center;
   text-align: center;
+  display: block;
 }
 
 .bluebackground {
