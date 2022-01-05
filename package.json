@@ -23,7 +23,7 @@
     "watch:scss": "onchange 'css/*.scss' -- npm run scss",
     "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
     "imagemin": "imagemin img/* -o dist/img",
-    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
+    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html && usemin mitrayectoria.html -d dist --htmlmin -o dist/mitrayectoria.html",
     "clean": "rimraf dist",
     "copyfonts": "copyfiles -f font/* dist/fonts",
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin"
