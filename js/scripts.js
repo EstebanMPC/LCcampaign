@@ -8,10 +8,8 @@ var headerGradientOverlay = document.querySelector('#gradientOverlay');
 hamburgerBtn.addEventListener('click', function () {
     if (window.pageYOffset < 470 && headerGradientOverlay.classList.contains('headergradient')) {
         headerGradientOverlay.classList.remove('headergradient')
-        console.log("it works!")
     } else {
         headerGradientOverlay.classList.add('headergradient')
-        console.log("Second click works!")
     }
 });
 
@@ -35,6 +33,8 @@ var x = setInterval(function() {
     document.querySelector('.hour').innerText = textHour
     document.querySelector('.minute').innerText = textMinute
     document.querySelector('.second').innerText = textSecond
-
-    console.log(now, countDate)
 }, 1000);
+
+
+
+    // && navMobile.className.indexOf("mobile-long-menu") === -1

@@ -22,27 +22,55 @@
 </head>
 <body>
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3" style="background-image: linear-gradient(
-                90deg,
-                hsla(208, 97%, 30%, 0.7) 0%,
-                hsla(200, 100%, 30%, 0.7) 0%,
-                hsla(135, 21%, 44%, 0.7) 54%,
-                hsla(108, 21%, 46%, 0.7) 61%,
-                hsla(51, 79%, 48%, 0.7) 99%,
-                hsla(48, 100%, 51%, 0.7) 99%
-                );">
+        <nav class="d-none d-lg-block navbar fixed-top navbar-expand-lg navbar-dark p-md-3" style="background-image: linear-gradient(
+                                                90deg,
+                                                hsla(208, 97%, 30%, 0.7) 0%,
+                                                hsla(200, 100%, 30%, 0.7) 0%,
+                                                hsla(135, 21%, 44%, 0.7) 54%,
+                                                hsla(108, 21%, 46%, 0.7) 61%,
+                                                hsla(51, 79%, 48%, 0.7) 99%,
+                                                hsla(48, 100%, 51%, 0.7) 99%
+                                                );">
             <div class="container-fluid">
                 <a class="navbar-brand brandfont" href="#">CL Luis Diego Aguilar</a>
-                <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <!--  -->
+        
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <div class="mx-auto"></div>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link text-white pt-3 mobilemenufont" href="#">Inicio</a>
+                            <a class="nav-link text-white menufont" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white menufont" href="./mitrayectoria.html">Mi Trayectoria</a></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="d-lg-none navbar fixed-top navbar-expand-lg navbar-dark p-md-3" style="background-image: linear-gradient(
+                                90deg,
+                                hsla(208, 97%, 30%, 0.7) 0%,
+                                hsla(200, 100%, 30%, 0.7) 0%,
+                                hsla(135, 21%, 44%, 0.7) 54%,
+                                hsla(108, 21%, 46%, 0.7) 61%,
+                                hsla(51, 79%, 48%, 0.7) 99%,
+                                hsla(48, 100%, 51%, 0.7) 99%
+                                );">
+            <div class="container-fluid">
+                <a class="navbar-brand brandfont" href="#">CL Luis Diego Aguilar</a>
+                <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <div class="mx-auto"></div>
+                    <ul class="navbar-nav mobile-long-menu">
+                        <li class="nav-item">
+                            <a class="nav-link text-white pt-3 mobilemenufont" href="./index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white mobilemenufont" href="./mitrayectoria.html">Mi Trayectoria</a></a>
@@ -53,11 +81,8 @@
         </nav>
         <!-- GRADIENT & MOBILE LANDING IMGS -->
         <div>
-            <div class="headercontainer"><div id="gradientOverlay" class="headergradient"></div></div>
+            <div class="headercontainer">h2<div id="gradientOverlay" class="headergradient-desktop">Orgullo</div></div>
             <img src="./img/Logo_Campana_300x220.png" alt="Luis Diego Logo" class="landinglogo animate__animated animate__fadeIn">
-            <!-- <div class="logocontainer">
-               
-            </div> -->
         </div>    
     </header>
 
