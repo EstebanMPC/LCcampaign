@@ -127,19 +127,19 @@
   place-items: center;
   place-content: center;
   max-width: 100vw;
-  height: 471px;
+  height: 85vh;
   background: linear-gradient(
     180deg,
-    hsla(208, 97%, 30%, 0.7) 0%,
-    hsla(200, 100%, 30%, 0.7) 0%,
-    hsla(135, 21%, 44%, 0.7) 54%,
-    hsla(108, 21%, 46%, 0.7) 61%,
-    hsla(51, 79%, 48%, 0.7) 99%,
-    hsla(48, 100%, 51%, 0.7) 99%
+    hsla(208, 97%, 30%, 1) 0%,
+    hsla(200, 100%, 30%, 1) 0%,
+    hsla(135, 21%, 44%, 1) 54%,
+    hsla(108, 21%, 46%, 1) 61%,
+    hsla(51, 79%, 48%, 1) 99%,
+    hsla(48, 100%, 51%, 1) 99%
   );
   -webkit-mask-image: linear-gradient(
     270deg,
-    transparent 10%,
+    transparent 35%,
     rgb(0, 0, 0) 100%
   );
 }
@@ -159,11 +159,23 @@
   place-content: center;
 } */
 
-.headercontainer {
+/* .headercontainer {
   background: url(../img/mobileimg.jpg) no-repeat center center;
   margin-top: 70px;
   max-width: 100vw;
   height: 471px;
+  position: relative;
+} */
+
+/* DESKTOP HERO */
+
+.headercontainer {
+  background: url(../img/IMG_0230.JPG);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  max-width: 100vw;
+  height: auto;
   position: relative;
 }
 
@@ -190,13 +202,13 @@
   line-height: 35px;
 }
 
-/* QUIEN SOY */
-.paragraphImage {
+/* QUIEN SOY MOBILE */
+.paragraphImage-mobile {
   background: url(../img/placeholder.jpg) no-repeat center center;
   height: 300px;
 }
 
-.paragraphcontainer {
+.paragraphcontainer-mobile {
   max-width: 100vw;
   height: 475px;
   display: grid;
@@ -211,6 +223,32 @@
     rgba(255, 255, 255, 0) 72.85%
   );
   z-index: 2;
+}
+
+/* QUIEN SOY DESKTOP */
+.paragraphcontainer {
+  max-width: 100vw;
+  height: 615px;
+  display: grid;
+  place-items: center;
+  place-content: center;
+  background: linear-gradient(
+    90deg,
+    #ffffff 33.4%,
+    rgba(255, 255, 255, 0.961265) 48.23%,
+    rgba(255, 255, 255, 0.815448) 58.4%,
+    rgba(255, 255, 255, 0.471765) 66.18%,
+    rgba(255, 255, 255, 0) 72.85%
+  );
+  z-index: 2;
+}
+
+.paragraphImage {
+  background: url(../img/Leon2.JPG);
+  height: px;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 /* CAROUSEL SECTION */
@@ -240,7 +278,7 @@
 
 #carouselsection {
   max-width: 100vw;
-  height: 600px;
+  height: 850px;
   display: grid;
   place-items: center;
   place-content: center;
@@ -260,6 +298,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+  max-height: 600px;
 }
 
 .carouselgradientbottom {
@@ -342,6 +381,10 @@ li {
 }
 .navbar-dark .navbar-toggler {
   border: rgba(0, 102, 153, 1);
+}
+
+.navbar {
+  padding: none;
 }
 
 .mobile-long-menu {

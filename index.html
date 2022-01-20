@@ -22,7 +22,7 @@
 </head>
 <body>
     <header>
-        <nav class="d-none d-lg-block navbar fixed-top navbar-expand-lg navbar-dark p-md-3" style="background-image: linear-gradient(
+        <nav class="d-none d-lg-block navbar fixed-top navbar-expand-lg navbar-dark" style="background-image: linear-gradient(
                                                 90deg,
                                                 hsla(208, 97%, 30%, 0.7) 0%,
                                                 hsla(200, 100%, 30%, 0.7) 0%,
@@ -81,17 +81,18 @@
         </nav>
         <!-- GRADIENT & MOBILE LANDING IMGS -->
         <div>
-            <div class="headercontainer">h2<div id="gradientOverlay" class="headergradient-desktop">Orgullo</div></div>
+            <div class="headercontainer">
+                <div id="gradientOverlay" class="headergradient-desktop"></div>
+            </div>
             <img src="./img/Logo_Campana_300x220.png" alt="Luis Diego Logo" class="landinglogo animate__animated animate__fadeIn">
         </div>    
     </header>
 
-    <!--  -->
-    <div id="emailcalltoaction"  >
+    <!-- EMAIL CALL TO ACTION -->
+    <!-- <div id="emailcalltoaction">
         <div class="pt-3 d-flex flex-column display-column align-items-center justify-content-center titleTwo animate__animated animate__fadeIn" >
             <h2>Expandamos <span class="text-warning">Juntos</span> el</h2> 
             <h2>¡Orgullo de Ser León!</h2>
-            <!-- <h6>Regístrate para recibir noticias y actualizaciones </h6> -->
         </div>
         <form class=" col-lg-5 col-md-12 col-sm-12 col-12" data-aos="fade-up">
             <div class="mt-2">
@@ -107,12 +108,49 @@
                 <button class="btn btn-warning" type="submit">¡SIRVAMOS JUNTOS!</button>
             </div>
         </form>
+    </div> -->
+
+    <div id="emailcalltoaction" class="d-flex justify-content-center flex-column align-items-center p-3">
+        <div class=" d-flex flex-column display-column align-items-center justify-content-center titleTwo animate__animated animate__fadeIn" >
+            <h2>Expandamos <span class="text-warning">Juntos</span> el</h2> 
+            <h2>¡Orgullo de Ser León!</h2>
+        </div>
+        <form class=" col-lg-5 col-md-12 col-sm-12 col-12 d-flex flex-row" data-aos="fade-up">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required="">
+            <input type="text" class="form-control" id="name" name="name" placeholder="Club" required="">
+            <input type="email" class="form-control" id="email" name="email" placeholder="tucorreo@ejemplo.com" required="">
+            <button class="btn btn-warning" type="submit">¡SIRVAMOS JUNTOS!</button>
+        </form>
     </div>
 
-    <!-- QUIEN SOY PARAGRAPH SECTION -->
-    <div class="mobileparagraph">
+    <!-- QUIEN SOY DESKTOP -->
+    <div class="mobileparagraph d-none d-lg-block">
         <div class="paragraphImage">
-            <div class="paragraphcontainer"></div>
+            <div class="paragraphcontainer d-flex flex-column align-items-start ">
+                <div class="paragraphcontainer d-flex flex-column align-items-center "style="width:50vw;">
+                    <div data-aos="fade-up ">
+                        <h1 class="title">QUIEN SOY</h1>
+                    </div>
+                    <div class="m-4 w-75">
+                        <p class="quote" data-aos="fade-up">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illum
+                            aliquid cupiditate. Cum,
+                            deleniti
+                        </p>
+                        <p class="quote" data-aos="fade-up">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illum
+                            aliquid cupiditate. Cum,
+                            deleniti nobis
+                            eligendi fuga consequatur explicabo ut!"
+                        </p>
+                        <h3 data-aos="fade-up">-Luis Diego Aguilar</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- QUIEN SOY MOBILE -->
+    <div class="mobileparagraph d-lg-none ">
+        <div class="paragraphImage-mobile">
+            <div class="paragraphcontainer-mobile"></div>
         </div>
         <div data-aos="fade-up">
             <h1 class="title">QUIEN</h1>
@@ -129,9 +167,16 @@
             <h3 data-aos="fade-up">-Luis Diego Aguilar</h3>
         </div>
     </div>
-    <div class="carouselgradient mt-5"></div>
+
+
+    <div class="carouselgradient mt-5 d-lg-none"></div>
     <div id="carouselsection">
-        <div class="carouseltitle pt-3">
+        <!-- Desktop title -->
+        <div class="carouseltitle pt-5 pb-3 d-none d-lg-block">
+            <h2 class="carouseltitle" data-aos="fade-up">Una vida dedicada al Servicio...</h2>
+        </div>
+        <!-- Mobile title -->
+        <div class="carouseltitle pt-3 d-lg-none">
             <h2 class="carouseltitle" data-aos="fade-up">Una vida</h2>
             <h2 class="carouseltitle" data-aos="fade-up">dedicada al</h2>
             <h2 class="carouseltitle" data-aos="fade-up">Servicio...</h2>
@@ -158,10 +203,10 @@
             </button>
         </div>
         <button type="button" href="mitrayectoria.html" class="btn btn-warning btn-lg mt-5 m-2">MI TRAYECTORIA</button>
-        
     </div>
     <div class="carouselgradientbottom pt-2 mb-5"></div>
-
+    
+   
     <!--  -->
     <div class="carouselsubtitle d-flex flex-column justify-content-center align-items-center mb-1 mt-5" data-aos="fade-up" style="width:100vw;">
         <h2 class="bluebackground carouseltitle mt-5" data-aos="fade-left">Más de 25 años</h2>
