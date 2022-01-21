@@ -79,49 +79,75 @@
                 </div>
             </div>
         </nav>
+
         <!-- GRADIENT & MOBILE LANDING IMGS -->
-        <div>
+        <!-- DESKTOP LANDING PAGE -->
+        <div class="d-none d-lg-block">
             <div class="headercontainer">
-                <div id="gradientOverlay" class="headergradient-desktop"></div>
+                <div id="gradientOverlay" class="headergradient-desktop">
+                    <h2 class="orgullo">Orgullo de ser Leon</h2>
+                    <img src="./img/Logo_Campana_300x220.png" alt="Luis Diego Logo" class="landinglogo animate__animated animate__fadeIn">
+                </div>
             </div>
-            <img src="./img/Logo_Campana_300x220.png" alt="Luis Diego Logo" class="landinglogo animate__animated animate__fadeIn">
-        </div>    
+            <div class="landinglogo">
+                
+            </div>
+        </div>
+        <!-- MOBILE LANDING PAGE -->
+        <div class="d-lg-none">
+            <div class="headercontainer-mobile">
+                <div id="gradientOverlay" class="headergradient"></div>
+            </div>
+            <img src="./img/Logo_Campana_300x220.png" alt="Luis Diego Logo"
+                class="landinglogo animate__animated animate__fadeIn">
+        </div>
     </header>
 
-    <!-- EMAIL CALL TO ACTION -->
-    <!-- <div id="emailcalltoaction">
-        <div class="pt-3 d-flex flex-column display-column align-items-center justify-content-center titleTwo animate__animated animate__fadeIn" >
-            <h2>Expandamos <span class="text-warning">Juntos</span> el</h2> 
-            <h2>¡Orgullo de Ser León!</h2>
-        </div>
-        <form class=" col-lg-5 col-md-12 col-sm-12 col-12" data-aos="fade-up">
-            <div class="mt-2">
-                <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required="">
-            </div>
-            <div class="mt-2">
-                <input type="text" class="form-control" id="name" name="name" placeholder="Club" required="">
-            </div>
-            <div class="mt-2">
-                <input type="email" class="form-control" id="email" name="email" placeholder="tucorreo@ejemplo.com" required="">
-            </div>
-            <div class="mt-2 pb-3 d-grid gap-2">
-                <button class="btn btn-warning" type="submit">¡SIRVAMOS JUNTOS!</button>
-            </div>
-        </form>
-    </div> -->
-
-    <div id="emailcalltoaction" class="d-flex justify-content-center flex-column align-items-center p-3">
+    <!-- EMAIL CALL TO ACTION DESKTOP -->
+    <div id="emailcalltoaction" class="d-none d-lg-block d-flex justify-content-center flex-column align-items-center p-3">
         <div class=" d-flex flex-column display-column align-items-center justify-content-center titleTwo animate__animated animate__fadeIn" >
             <h2>Expandamos <span class="text-warning">Juntos</span> el</h2> 
             <h2>¡Orgullo de Ser León!</h2>
         </div>
-        <form class=" col-lg-5 col-md-12 col-sm-12 col-12 d-flex flex-row" data-aos="fade-up">
-            <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required="">
-            <input type="text" class="form-control" id="name" name="name" placeholder="Club" required="">
-            <input type="email" class="form-control" id="email" name="email" placeholder="tucorreo@ejemplo.com" required="">
-            <button class="btn btn-warning" type="submit">¡SIRVAMOS JUNTOS!</button>
+        <form class="row g-4 mt-2 pb-3  col-lg-12 col-md-12 col-sm-12 col-12 d-flex flex-row align-items-center justify-content-center" data-aos="fade-up">
+            <div class="col-auto">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required="">
+            </div>
+            <div class="col-auto">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Club" required="">
+            </div>
+            <div class="col-auto">
+                <input type="email" class="form-control" id="email" name="email" placeholder="tucorreo@ejemplo.com" required="">
+            </div>
+            <div class="d-grid gap-2 col-auto">
+                <button class="btn btn-warning" type="submit">¡SIRVAMOS JUNTOS!</button>
+            </div>
         </form>
     </div>
+
+        <!-- EMAIL CALL TO ACTION MOBILE  -->
+        <div id="emailcalltoaction" class=" d-lg-none">
+            <div
+                class="  pt-3 d-flex flex-column display-column align-items-center justify-content-center titleTwo animate__animated animate__fadeIn">
+                <h2>Expandamos <span class="text-warning">Juntos</span> el</h2>
+                <h2>¡Orgullo de Ser León!</h2>
+            </div>
+            <form class=" col-lg-5 col-md-12 col-sm-12 col-12" data-aos="fade-up">
+                <div class="mt-2">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required="">
+                </div>
+                <div class="mt-2">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Club" required="">
+                </div>
+                <div class="mt-2">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="tucorreo@ejemplo.com"
+                        required="">
+                </div>
+                <div class="mt-2 pb-3 d-grid gap-2">
+                    <button class="btn btn-warning" type="submit">¡SIRVAMOS JUNTOS!</button>
+                </div>
+            </form>
+        </div>
 
     <!-- QUIEN SOY DESKTOP -->
     <div class="mobileparagraph d-none d-lg-block">
@@ -169,19 +195,19 @@
     </div>
 
 
-    <div class="carouselgradient mt-5 d-lg-none"></div>
+    <div class="carouselgradient mt-5 "></div>
     <div id="carouselsection">
         <!-- Desktop title -->
         <div class="carouseltitle pt-5 pb-3 d-none d-lg-block">
             <h2 class="carouseltitle" data-aos="fade-up">Una vida dedicada al Servicio...</h2>
         </div>
         <!-- Mobile title -->
-        <div class="carouseltitle pt-3 d-lg-none">
+        <div class="carouseltitle pt-3 pb-5 d-lg-none">
             <h2 class="carouseltitle" data-aos="fade-up">Una vida</h2>
             <h2 class="carouseltitle" data-aos="fade-up">dedicada al</h2>
             <h2 class="carouseltitle" data-aos="fade-up">Servicio...</h2>
         </div>
-        <div id="carouselExampleControls" class="carousel slide mt-3" data-bs-ride="carousel" data-aos="fade-up">
+        <div id="carouselExampleControls" class="carousel slide mt-3 mb-3" data-bs-ride="carousel" data-aos="fade-up">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="./img/IMG_4323.jpg" class="d-block w-100 carouselimg" alt="...">
@@ -202,45 +228,44 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <button type="button" href="mitrayectoria.html" class="btn btn-warning btn-lg mt-5 m-2">MI TRAYECTORIA</button>
+        <button type="button" href="mitrayectoria.html" style="z-index:10;"class="btn btn-warning btn-lg mt-5 m-2">MI TRAYECTORIA</button>
     </div>
     <div class="carouselgradientbottom pt-2 mb-5"></div>
-    
+    <br>
    
     <!--  -->
     <div class="carouselsubtitle d-flex flex-column justify-content-center align-items-center mb-1 mt-5" data-aos="fade-up" style="width:100vw;">
-        <h2 class="bluebackground carouseltitle mt-5" data-aos="fade-left">Más de 25 años</h2>
-        <h2 class="yellowbackground carouseltitle" data-aos="fade-right">de Servicio a</h2>
-        <h2 class="bluebackground carouseltitle" data-aos="fade-left">nuestro Distrito</h2>
+        <h2 class="bluebackground carousel-subtitle mt-5" data-aos="fade-left">Más de 25 años</h2>
+        <h2 class="yellowbackground carousel-subtitle" data-aos="fade-right">de Servicio a</h2>
+        <h2 class="bluebackground carousel-subtitle" data-aos="fade-left">nuestro Distrito</h2>
     </div>
     <!-- COUNTDOWN TIMER -->
     <section id="timer" class="coming-soon mt-3">
         <div>
-            <div style="text-align: center;" class="mb-5">
-                <h2 class="timerfont" data-aos="fade-up">Abril 23, 2022</h2>
-                <h2 class="timerfont text-warning" data-aos="fade-up">Día de Elecciones</h2>
-                <h2 class="timerfont" data-aos="fade-up">Faltan:</h2>
+            <div style="text-align: center;" class="">
+                <h2 class="timerfont-sub text-warning" data-aos="fade-up">Día de Elecciones</h2>
+                <h2 class="timerfont-main" data-aos="fade-up">Abril 23, 2022</h2>
             </div>
             <div class="countdown" data-aos="fade-up">
                 <div class="container-day">
                     <div class="day">Time</div>
-                    <h3>Dias</h3>
+                    <h3 class="timerfont-date">Días</h3>
                 </div>
                 <div class="container-hour">
                     <div class="hour">Time</div>
-                    <h3>Horas</h3>
+                    <h3 class="timerfont-date">Horas</h3>
                 </div>
                 <div class="container-minute">
                     <div class="minute">Time</div>
-                    <h3>Min</h3>
+                    <h3 class="timerfont-date">Min</h3>
                 </div>
                 <div class="container-seconds">
                     <div class="second">Time</div>
-                    <h3>Seg</h3>
+                    <h3 class="timerfont-date">Seg</h3>
                 </div>
             </div>
         </div>
-        <img class="waiting mb-4" data-aos="fade-up" src="./img/073.png" alt="">
+        <img class="waiting mb-4 d-lg-none" data-aos="fade-up" src="./img/073.png" alt="">
     </section>
 
     <footer id="footersection">
