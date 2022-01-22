@@ -13,6 +13,13 @@ hamburgerBtn.addEventListener('click', function () {
     }
 });
 
+// document.addEventListener('scroll', function () {
+//     if (window.pageYOffset > 470) {
+//         document.getElementById('navigation-bar').style.backgroundImage = "linear-gradient(266deg, rgba(2, 0, 36, 0.2553396358543417) 0%, rgba(255, 205, 5, 0.7) 0%, rgba(2, 81, 151, 0.7) 97%);"
+//         console.log("itworks")
+//     } 
+// });
+
 
 var x = setInterval(function() {
     var countDate = new Date("April 23, 2022 12:00:00").getTime();
@@ -37,4 +44,3 @@ var x = setInterval(function() {
 
 
 
-    // && navMobile.className.indexOf("mobile-long-menu") === -1

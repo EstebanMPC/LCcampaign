@@ -22,15 +22,7 @@
 </head>
 <body>
     <header>
-        <nav class="d-none d-lg-block navbar fixed-top navbar-expand-lg navbar-dark" style="background-image: linear-gradient(
-                                                90deg,
-                                                hsla(208, 97%, 30%, 0.7) 0%,
-                                                hsla(200, 100%, 30%, 0.7) 0%,
-                                                hsla(135, 21%, 44%, 0.7) 54%,
-                                                hsla(108, 21%, 46%, 0.7) 61%,
-                                                hsla(51, 79%, 48%, 0.7) 99%,
-                                                hsla(48, 100%, 51%, 0.7) 99%
-                                                );">
+        <nav id="navigation-bar"class="d-none d-lg-block navbar fixed-top navbar-expand-lg navbar-dark" style="">
             <div class="container-fluid">
                 <a class="navbar-brand brandfont" href="#">CL Luis Diego Aguilar</a>
                 <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -51,15 +43,13 @@
                 </div>
             </div>
         </nav>
+
+        
         <nav class="d-lg-none navbar fixed-top navbar-expand-lg navbar-dark p-md-3" style="background-image: linear-gradient(
-                                90deg,
-                                hsla(208, 97%, 30%, 0.7) 0%,
-                                hsla(200, 100%, 30%, 0.7) 0%,
-                                hsla(135, 21%, 44%, 0.7) 54%,
-                                hsla(108, 21%, 46%, 0.7) 61%,
-                                hsla(51, 79%, 48%, 0.7) 99%,
-                                hsla(48, 100%, 51%, 0.7) 99%
-                                );">
+                                                    266deg, 
+                                                    rgba(2, 0, 36, 0.2553396358543417) 0%,
+                                                    rgba(255, 205, 5, 0.7) 0%,
+                                                    rgba(2, 81, 151, 0.7) 97%);">
             <div class="container-fluid">
                 <a class="navbar-brand brandfont" href="#">CL Luis Diego Aguilar</a>
                 <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -84,9 +74,13 @@
         <!-- DESKTOP LANDING PAGE -->
         <div class="d-none d-lg-block">
             <div class="headercontainer">
-                <div id="gradientOverlay" class="headergradient-desktop">
-                    <h2 class="orgullo">Orgullo de ser Leon</h2>
-                    <img src="./img/Logo_Campana_300x220.png" alt="Luis Diego Logo" class="landinglogo animate__animated animate__fadeIn">
+                <div id="gradientOverlay" class="headergradient-desktop landing-container d-flex flex-column align-items-start ">
+                    <div class="d-flex flex-column align-items-center "style="width:50vw;">
+                        <img src="./img/Logo_Campana_300x220.png" alt="Luis Diego Logo" class="landinglogo animate__animated animate__fadeIn">
+                        <h2 class="landing-text-title ">Aqui va texto</h2>
+                        <h2 class="landing-text-subtitle">AQUI VA MAS</h2>
+                        <h2 class="landing-text-subtitle">TEXTO</h2>
+                    </div>
                 </div>
             </div>
             <div class="landinglogo">
@@ -111,16 +105,16 @@
         </div>
         <form class="row g-4 mt-2 pb-3  col-lg-12 col-md-12 col-sm-12 col-12 d-flex flex-row align-items-center justify-content-center" data-aos="fade-up">
             <div class="col-auto">
-                <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required="">
+                <input type="text" class="form-control" style="padding:15px;" id="name" name="name" placeholder="Nombre" required="">
             </div>
             <div class="col-auto">
-                <input type="text" class="form-control" id="name" name="name" placeholder="Club" required="">
+                <input type="text" class="form-control" style="padding:15px;" id="name" name="name" placeholder="Club">
             </div>
             <div class="col-auto">
-                <input type="email" class="form-control" id="email" name="email" placeholder="tucorreo@ejemplo.com" required="">
+                <input type="email" class="form-control" style="width:250px; padding:15px;" id="email" name="email" placeholder="tucorreo@ejemplo.com" required="">
             </div>
             <div class="d-grid gap-2 col-auto">
-                <button class="btn btn-warning" type="submit">¡SIRVAMOS JUNTOS!</button>
+                <button class="btn btn-warning" style="padding:15px;" type="submit">¡SIRVAMOS JUNTOS!</button>
             </div>
         </form>
     </div>
@@ -144,7 +138,7 @@
                         required="">
                 </div>
                 <div class="mt-2 pb-3 d-grid gap-2">
-                    <button class="btn btn-warning" type="submit">¡SIRVAMOS JUNTOS!</button>
+                    <button class="btn btn-warning " type="submit">¡SIRVAMOS JUNTOS!</button>
                 </div>
             </form>
         </div>
@@ -152,12 +146,12 @@
     <!-- QUIEN SOY DESKTOP -->
     <div class="mobileparagraph d-none d-lg-block">
         <div class="paragraphImage">
-            <div class="paragraphcontainer d-flex flex-column align-items-start ">
-                <div class="paragraphcontainer d-flex flex-column align-items-center "style="width:50vw;">
+            <div class="paragraphcontainer d-flex flex-column align-items-end ">
+                <div class="d-flex flex-column align-items-center "style="width:50vw;">
                     <div data-aos="fade-up ">
                         <h1 class="title">QUIEN SOY</h1>
                     </div>
-                    <div class="m-4 w-75">
+                    <div class="m-4 w-50">
                         <p class="quote" data-aos="fade-up">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illum
                             aliquid cupiditate. Cum,
                             deleniti
@@ -234,11 +228,7 @@
     <br>
    
     <!--  -->
-    <div class="carouselsubtitle d-flex flex-column justify-content-center align-items-center mb-1 mt-5" data-aos="fade-up" style="width:100vw;">
-        <h2 class="bluebackground carousel-subtitle mt-5" data-aos="fade-left">Más de 25 años</h2>
-        <h2 class="yellowbackground carousel-subtitle" data-aos="fade-right">de Servicio a</h2>
-        <h2 class="bluebackground carousel-subtitle" data-aos="fade-left">nuestro Distrito</h2>
-    </div>
+    
     <!-- COUNTDOWN TIMER -->
     <section id="timer" class="coming-soon mt-3">
         <div>
@@ -272,7 +262,7 @@
         <div class="d-flex align-items-center justify-content-center flex-column">
             <div class="d-flex align-items-center text-center flex-column mt-5">
                 <h1 class="trayectoriasubtitle text-white">Mantengamonos en contacto</h1>
-                <form class=" col-lg-5 col-md-12 col-sm-12 col-12 mt-4">
+                <form class=" col-lg-8 col-md-12 col-sm-12 col-12 mt-4">
                     <div class="mt-2">
                         <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required="">
                     </div>
@@ -307,7 +297,7 @@
                         d="M352.08,326.69l11.23-73.26H293V205.89c0-20,9.81-39.58,41.3-39.58h31.95V104s-29-5-56.73-5c-57.88,0-95.72,35.08-95.72,98.6v55.83H149.48v73.26h64.35V503.78a256.11,256.11,0,0,0,79.2,0V326.69Z" />
                 </svg>
             </div>
-            <div class="text-center text-white mt-5">
+            <div class="text-center text-white mt-5 col-lg-3">
                 <h1 class="trayectoriasubtitle">Compromiso</h1>
                 <h6>Este es un texto para llenar le hueco con lo que promovemos. Al infinito y el mas alla</h6>
             </div>
