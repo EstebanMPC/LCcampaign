@@ -230,12 +230,12 @@
   position: relative;
 }
 
-/* .landinglogo {
+.landinglogo-mobile {
   position: absolute;
   z-index: 100;
   left: 45px;
   top: 325px;
-} */
+}
 
 .landinglogo {
   width: 350px;
