@@ -88,6 +88,15 @@
   margin: 0px;
   padding: 0px;
 }
+
+.trayectoriatitle-mobile {
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  color: #006699;
+  font-weight: 800;
+  margin: 0px;
+  padding: 0px;
+}
 /* width 800 for desktop */
 .trayectoriasubtitle {
   font-family: "Raleway", sans-serif;
@@ -383,11 +392,8 @@
   );
 }
 
-.carouselimg {
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  max-height: 600px;
+.carousel-inner {
+  width: 100vw;
 }
 
 .carouselgradientbottom {
