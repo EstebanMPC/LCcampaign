@@ -3,20 +3,24 @@ AOS.init();
 
 var nav = document.querySelector('nav');
 var hamburgerBtn = document.querySelector('.navbar-toggler');
-var headerGradientOverlay = document.querySelector('#gradientOverlay');
+var headerGradientOverlay = document.getElementById('gradientOverlay');
 
 hamburgerBtn.addEventListener('click', function () {
-    if (window.pageYOffset < 470 && headerGradientOverlay.classList.contains('headergradient')) {
+    console.log("click")
+    if (window.pageYOffset > 470 && headerGradientOverlay.classList.contains('headergradient')) {
         headerGradientOverlay.classList.remove('headergradient')
+        console.log("itworks")
     } else {
         headerGradientOverlay.classList.add('headergradient')
     }
 });
 
 // document.addEventListener('scroll', function () {
-//     if (window.pageYOffset > 470) {
-//         document.getElementById('navigation-bar').style.backgroundImage = "linear-gradient(266deg, rgba(2, 0, 36, 0.2553396358543417) 0%, rgba(255, 205, 5, 0.7) 0%, rgba(2, 81, 151, 0.7) 97%);"
-//         console.log("itworks")
+//     navBar = document.getElementById('navigation-bar');
+
+//     if (window.pageYOffset > 800) {
+//         navBar.style.backgroundImage = "linear-gradient(266deg, rgba(2, 0, 36, 0.2553396358543417) 0%, rgba(255, 205, 5, 0.7) 0%, rgba(2, 81, 151, 0.7) 97%);"
+//         console.log("itwo")
 //     } 
 // });
 
@@ -41,6 +45,6 @@ var x = setInterval(function() {
     document.querySelector('.minute').innerText = textMinute
     document.querySelector('.second').innerText = textSecond
 }, 1000);
-
+// Event is at 12pm Central, so the "hour", "min", & "sec" values will read as "0" at 12pm every day, and one "day" will be subtracted
 
 

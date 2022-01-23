@@ -172,7 +172,7 @@
   );
   -webkit-mask-image: linear-gradient(
     180deg,
-    transparent 45%,
+    transparent 75%,
     rgb(0, 0, 0) 100%
   );
 }
@@ -216,6 +216,11 @@
   max-width: 100vw;
   height: 471px;
   position: relative;
+}
+
+.headercontainer-mobiletwo {
+  background: url(../img/Logo_Campana_300x220.png) no-repeat center center;
+  height: 700px;
 }
 
 /* DESKTOP HERO */
