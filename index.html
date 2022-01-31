@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en, es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,9 +22,10 @@
 </head>
 <body>
     <header>
+        <!-- Navbar Desktop -->
         <nav id="navigation-bar"class="d-none d-lg-block navbar fixed-top navbar-expand-lg navbar-dark" style="">
             <div class="container-fluid">
-                <a class="navbar-brand brandfont" href="#">CL Luis Diego Aguilar</a>
+                <a class="navbar-brand brandfont" href="./index.html">CL Luis Diego Aguilar</a>
                 <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -33,30 +34,29 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <div class="mx-auto"></div>
                     <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                🇨🇷
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">🇺🇸</a></li>
-                                <li><a class="dropdown-item" href="#">🇨🇷</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a lang="es" class="nav-link text-white menufont" href="./index.html">Inicio</a>
+                           
+                            <a lang="en" class="nav-link text-white menufont" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white menufont" href="./index.html">Inicio</a>
+                            <a lang="es" class="nav-link text-white menufont" href="./mitrayectoria.html">Mi Trayectoria</a></a>
+                            
+                            <a lang="en" class="nav-link text-white menufont" href="./mitrayectoria.html">My Journey</a></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white menufont" href="./mitrayectoria.html">Mi Trayectoria</a></a>
+                        <li class="nav-item dropdown d-flex align-items-center">
+                            <button id="switch-lang" type="button" class="btn btn-link text-decoration-none">
+                                <span lang="es">🇺🇸</span>
+                                <span lang="en">🇺🇸</span>
+                            </button>
                         </li>
-                
                     </ul>
                 </div>
                 
             </div>
         </nav>
-
         
+        <!-- Navbar Mobile -->
         <nav class="d-lg-none navbar fixed-top navbar-expand-lg navbar-dark p-md-3" style="background-image: linear-gradient(
                                                     266deg, 
                                                     rgba(2, 0, 36, 0.2553396358543417) 0%,
@@ -64,10 +64,15 @@
                                                     rgba(2, 81, 151, 0.7) 97%);">
             <div class="container-fluid">
                 <a class="navbar-brand brandfont" href="#">CL Luis Diego Aguilar</a>
+                <button id="switch-lang" type="button" class="btn btn-link text-decoration-none">
+                    <span lang="es">🇺🇸</span>
+                    <span lang="en"></span>
+                </button>
                 <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                    
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <div class="mx-auto"></div>
                     <ul class="navbar-nav mobile-long-menu">
@@ -79,6 +84,7 @@
                         </li>
                     </ul>
                 </div>
+                
             </div>
         </nav>
 
@@ -109,12 +115,12 @@
             </div>
         </div>
     </header>
-
     <!-- EMAIL CALL TO ACTION DESKTOP -->
     <div id="emailcalltoaction" class="d-none d-lg-block d-flex justify-content-center flex-column align-items-center pt-4 p-3">
         <div class="d-flex align-items-center justify-content-center flex-column"></div>
         <div class=" d-flex flex-column display-column align-items-center justify-content-center titleTwo animate__animated animate__fadeIn" >
-            <h2>Expandamos <span class="text-warning">Juntos</span> el ¡Orgullo de Ser León!</h2>
+            <h2 lang="es">Expandamos <span class="text-warning">Juntos</span> el ¡Orgullo de Ser León!</h2>
+            <h2 lang="en">Let's Promote <span class="text-warning">Together</span> "Proud to be a Lion!"</h2>
         </div> 
         <form class="row g-4 mt-2 pb-3  col-lg-12 col-md-12 col-sm-12 col-12 d-flex flex-row align-items-center justify-content-center" data-aos="fade-up">
             <div class="col-auto">
@@ -127,7 +133,8 @@
                 <input type="email" class="form-control" style="width:250px; padding:15px;" id="email" name="email" placeholder="tucorreo@ejemplo.com" required="">
             </div>
             <div class="d-grid gap-2 col-auto">
-                <button class="btn btn-warning" style="padding:15px;" type="submit">¡SIRVAMOS JUNTOS!</button>
+                <button lang="es" class="btn btn-warning" style="padding:15px;" type="submit">¡SIRVAMOS JUNTOS!</button>
+                <button lang="en" class="btn btn-warning" style="padding:15px;" type="submit">LET’S SERVE TOGETHER!</button>
             </div>
         </form>
     </div>
@@ -136,8 +143,11 @@
     <div id="emailcalltoaction" class=" d-lg-none d-flex align-items-center justify-content-center flex-column">
         <div
             class="  pt-3 d-flex flex-column display-column align-items-center justify-content-center titleTwo animate__animated animate__fadeIn">
-                <h2>Expandamos <span class="text-warning">Juntos</span> el</h2>
-                <h2>¡Orgullo de Ser León!</h2>
+                <h2 lang="es">Expandamos <span class="text-warning">Juntos</span> el</h2>
+                <h2 lang="es">¡Orgullo de Ser León!</h2>
+
+                <h2 lang="en">Let's Promote <span class="text-warning">Together</span> el</h2>
+                <h2 lang="en">"Proud to be a Lion!"</h2>
         </div>
         <form class="col-md-8 col-sm-10 col-12" data-aos="fade-up">
             <div class="mt-2">
@@ -151,7 +161,9 @@
                     required="">
             </div>
             <div class="mt-2 pb-3 d-grid gap-2">
-                <button class="btn btn-warning " type="submit">¡SIRVAMOS JUNTOS!</button>
+                <button lang="es" class="btn btn-warning " type="submit">¡SIRVAMOS JUNTOS!</button>
+
+                <button lang="en" class="btn btn-warning " type="submit">LET’S SERVE TOGETHER!</button>
             </div>
         </form>
     </div>
@@ -162,7 +174,9 @@
             <div class="paragraphcontainer d-flex flex-column align-items-end ">
                 <div class="d-flex flex-column align-items-center "style="width:50vw;">
                     <div data-aos="fade-up ">
-                        <h1 class="title">QUIEN SOY</h1>
+                        <h1 lang="es" class="title">QUIEN SOY</h1>
+
+                        <h1 lang="en" class="title">ABOUT ME</h1>
                     </div>
                     <div class="m-4 w-50">
                         <p class="quote" data-aos="fade-up">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illum
@@ -186,8 +200,11 @@
             <div class="paragraphcontainer-mobile"></div>
         </div>
         <div data-aos="fade-up">
-            <h1 class="title">QUIEN</h1>
-            <h1 class="title">SOY</h1>
+            <h1 lang="es" class="title">QUIEN</h1>
+            <h1 lang="es" class="title">SOY</h1>
+           
+            <h1 lang="en" class="title">ABOUT</h1>
+            <h1 lang="en" class="title">ME</h1>
         </div>
         <div class="m-4 col-md-8 col-sm-10 col-10">
             <p class="quote" data-aos="fade-up">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati illum aliquid cupiditate. Cum,
@@ -206,13 +223,15 @@
     <div id="carouselsection">
         <!-- Desktop title -->
         <div class="carouseltitle pt-5 pb-3 d-none d-lg-block">
-            <h2 class="carouseltitle" data-aos="fade-up">Una vida dedicada al Servicio...</h2>
+            <h2 lang="es" class="carouseltitle" data-aos="fade-up">Una vida dedicada al Servicio...</h2>
+
+            <h2 lang="en" class="carouseltitle" data-aos="fade-up">A life dedicated to service...</h2>
         </div>
         <!-- Mobile title -->
         <div class="carouseltitle pt-3 pb-5 d-lg-none">
-            <h2 class="carouseltitle" data-aos="fade-up">Una vida</h2>
-            <h2 class="carouseltitle" data-aos="fade-up">dedicada al</h2>
-            <h2 class="carouseltitle" data-aos="fade-up">Servicio...</h2>
+            <h2 lang="es" class="carouseltitle" data-aos="fade-up">Una vida</h2>
+            <h2 lang="es" class="carouseltitle" data-aos="fade-up">dedicada al</h2>
+            <h2 lang="es" class="carouseltitle" data-aos="fade-up">Servicio...</h2>
         </div>
         <div style="max-width:1000px;">
             <div id="carouselExampleControls" class="carousel slide mt-3 mb-3" data-bs-ride="carousel" data-aos="fade-up">
@@ -237,7 +256,8 @@
                 </button>
             </div>
         </div>
-        <button type="button" href="mitrayectoria.html" style="z-index:10;"class="btn btn-warning btn-lg mt-5 m-2">MI TRAYECTORIA</button>
+        <button lang="es" type="button" href="mitrayectoria.html" style="z-index:10;"class="btn btn-warning btn-lg mt-5 m-2">MI TRAYECTORIA</button>
+        <button lang="en" type="button" href="mitrayectoria.html" style="z-index:10;"class="btn btn-warning btn-lg mt-5 m-2">MY JOURNEY</button>
     </div>
     <div class="carouselgradientbottom pt-2 mb-2"></div>
     
@@ -245,17 +265,24 @@
     <section id="timer" class="coming-soon">
         <div>
             <div style="text-align: center;" class="">
-                <h2 class="timerfont-sub text-warning" data-aos="fade-up">Día de Elecciones</h2>
-                <h2 class="timerfont-main" data-aos="fade-up">Abril 23, 2022</h2>
+                <h2 lang="es" class="timerfont-sub text-warning" data-aos="fade-up">Día de Elecciones</h2>
+                <h2 lang="es" class="timerfont-main" data-aos="fade-up">23 de Abril, 2022</h2>
+
+                <h2 lang="en" class="timerfont-sub text-warning" data-aos="fade-up">Election day</h2>
+                <h2 lang="en" class="timerfont-main" data-aos="fade-up">April 23, 2022</h2>
             </div>
             <div class="countdown" data-aos="fade-up">
                 <div class="container-day">
                     <div class="day">Time</div>
-                    <h3 class="timerfont-date">Días</h3>
+                    <h3 lang="es" class="timerfont-date">Días</h3>
+                    
+                    <h3 lang="en" class="timerfont-date">Days</h3>
                 </div>
                 <div class="container-hour">
                     <div class="hour">Time</div>
-                    <h3 class="timerfont-date">Horas</h3>
+                    <h3 lang="es" class="timerfont-date">Horas</h3>
+                    
+                    <h3 lang="en" class="timerfont-date">Hours</h3>
                 </div>
                 <div class="container-minute">
                     <div class="minute">Time</div>
@@ -263,7 +290,9 @@
                 </div>
                 <div class="container-seconds">
                     <div class="second">Time</div>
-                    <h3 class="timerfont-date">Seg</h3>
+                    <h3 lang="es" class="timerfont-date">Seg</h3>
+                    
+                    <h3 lang="en" class="timerfont-date">Secs</h3>
                 </div>
             </div>
         </div>
@@ -273,7 +302,9 @@
     <footer id="footersection">
         <div class="d-flex align-items-center justify-content-center flex-column">
             <div class="d-flex align-items-center text-center flex-column mt-5">
-                <h1 class="trayectoriasubtitle text-white">Mantengamonos en contacto</h1>
+                <h1 lang="es" class="trayectoriasubtitle text-white">Mantengamonos en contacto</h1>
+                
+                <h1 lang="en" class="trayectoriasubtitle text-white">Let's stay in contact</h1>
                 <form class=" col-lg-8 col-md-12 col-sm-12 col-12 mt-4">
                     <div class="mt-2">
                         <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required="">
@@ -286,7 +317,9 @@
                             required="">
                     </div>
                     <div class="mt-2 pb-3 d-grid gap-2">
-                        <button class="btn btn-warning " type="submit">¡SIRVAMOS JUNTOS!</button>
+                        <button lang="es" class="btn btn-warning " type="submit">¡SIRVAMOS JUNTOS!</button>
+
+                        <button lang="en" class="btn btn-warning " type="submit">LET'S SERVE TOGETHER!</button>
                     </div>
                 </form>
             </div>
@@ -310,14 +343,20 @@
                 </svg>
             </div>
             <div class="text-center text-white mt-5 col-lg-3">
-                <h1 class="trayectoriasubtitle">Compromiso</h1>
-                <h6>Este es un texto para llenar le hueco con lo que promovemos. Al infinito y el mas alla</h6>
+                <h1 lang="es" class="trayectoriasubtitle">Mi Misión</h1>
+                <h1 lang="en" class="trayectoriasubtitle">My Mission</h1>
+                <h6 >Este es un texto para llenar le hueco con lo que promovemos. Al infinito y el mas alla</h6>
             </div>
             <div class="text-center text-white mt-5 mb-5 d-flex flex-column justify-content-center">
-                <h1 class="trayectoriasubtitle">Navegar</h1>
-                <a class=" text-white" href="#">Inicio</a>
-                <a class="text-white" href="./mitrayectoria.html">Mi Trayectoria</a>
+                <h1 lang="es" class="trayectoriasubtitle">Navegar</h1>
+                <a lang="es" class=" text-white" href="#">Inicio</a>
+                <a lang="es" class="text-white" href="./mitrayectoria.html">Mi Trayectoria</a>
+                
+                <h1 lang="en" class="trayectoriasubtitle">Navigate</h1>
+                <a lang="en" class=" text-white" href="#">Home</a>
+                <a lang="en" class="text-white" href="./mitrayectoria.html">My Journey</a>
             </div>
+            
         </div>
     </footer>
 
@@ -325,6 +364,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- build:js js/main.js -->
     <script src="js/scripts.js"></script>

@@ -578,6 +578,10 @@ li {
   margin-top: 70px;
 }
 
+.dropdown-menu {
+  min-width: 20px;
+}
+
 html,
 body {
   overflow-x: hidden;

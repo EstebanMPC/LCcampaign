@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en, es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&family=Raleway:ital,wght@0,300;0,600;0,800;1,700&display=swap"
-        rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&family=Raleway:ital,wght@0,300;0,600;0,800;1,700&display=swap"
+            rel="stylesheet">
     <!-- build:css css/main.css -->
     <link href="css/styles.css" rel="stylesheet">
     <!-- endbuild -->
@@ -24,14 +24,10 @@
 
 <body>
     <header>
-        <!-- Desktop Navbar -->
-        <nav id="navigation-bar" class="d-none d-lg-block navbar fixed-top navbar-expand-lg navbar-dark" style="background-image: linear-gradient(
-                                                            266deg, 
-                                                            rgba(2, 0, 36, 0.2553396358543417) 0%,
-                                                            rgba(255, 205, 5, 0.7) 0%,
-                                                            rgba(2, 81, 151, 0.7) 97%);">
+        <!-- Navbar Desktop -->
+        <nav id="navigation-bar" class="d-none d-lg-block navbar fixed-top navbar-expand-lg navbar-dark" style="">
             <div class="container-fluid">
-                <a class="navbar-brand brandfont" href="#">CL Luis Diego Aguilar</a>
+                <a class="navbar-brand brandfont" href="./index.html">CL Luis Diego Aguilar</a>
                 <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -41,17 +37,28 @@
                     <div class="mx-auto"></div>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link text-white menufont" href="./index.html">Inicio</a>
+                            <a lang="es" class="nav-link text-white menufont" href="./index.html">Inicio</a>
+        
+                            <a lang="en" class="nav-link text-white menufont" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white menufont" href="./mitrayectoria.html">Mi Trayectoria</a></a>
+                            <a lang="es" class="nav-link text-white menufont" href="./mitrayectoria.html">Mi Trayectoria</a></a>
+        
+                            <a lang="en" class="nav-link text-white menufont" href="./mitrayectoria.html">My Journey</a></a>
+                        </li>
+                        <li class="nav-item dropdown d-flex align-items-center">
+                            <button id="switch-lang" type="button" class="btn btn-link text-decoration-none">
+                                <span lang="es">🇨🇷</span>
+                                <span lang="en">🇺🇸</span>
+                            </button>
                         </li>
                     </ul>
                 </div>
+        
             </div>
         </nav>
         
-        <!-- Mobile Navbar -->
+        <!-- Navbar Mobile -->
         <nav class="d-lg-none navbar fixed-top navbar-expand-lg navbar-dark p-md-3" style="background-image: linear-gradient(
                                                             266deg, 
                                                             rgba(2, 0, 36, 0.2553396358543417) 0%,
@@ -63,6 +70,7 @@
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+        
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <div class="mx-auto"></div>
                     <ul class="navbar-nav mobile-long-menu">
@@ -72,8 +80,22 @@
                         <li class="nav-item">
                             <a class="nav-link text-white mobilemenufont" href="./mitrayectoria.html">Mi Trayectoria</a></a>
                         </li>
+        
+                        <li class="nav-item dropdown d-flex align-items-center mt-3 text-white">
+                            <h6 class="">Language </h6>
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                🇨🇷
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">🇺🇸</a></li>
+                                <li><a class="dropdown-item" href="#">🇨🇷</a></li>
+                            </ul>
+                        </li>
+        
                     </ul>
                 </div>
+        
             </div>
         </nav>
 
@@ -94,24 +116,32 @@
                 style="width:100vw;">
                 <div class="carouselsubtitle d-flex flex-column justify-content-center align-items-center mb-1 mt-5"
                     data-aos="fade-up" style="width:100vw;">
-                    <h2 class="bluebackground carousel-subtitle mt-5" data-aos="fade-left">Más de 25 años</h2>
-                    <h2 class="yellowbackground carousel-subtitle" data-aos="fade-right">de Servicio a</h2>
-                    <h2 class="bluebackground carousel-subtitle mb-5" data-aos="fade-left">nuestro Distrito</h2>
+                    <h2 lang="es" class="bluebackground carousel-subtitle mt-5" data-aos="fade-left">Más de 25 años</h2>
+                    <h2 lang="es"class="yellowbackground carousel-subtitle" data-aos="fade-right">de Servicio a</h2>
+                    <h2 lang="es" class="bluebackground carousel-subtitle mb-5" data-aos="fade-left">nuestro Distrito</h2>
+
+                    <h2 lang="en" class="bluebackground carousel-subtitle mt-5" data-aos="fade-left">More than 25 years</h2>
+                    <h2 lang="en" class="yellowbackground carousel-subtitle" data-aos="fade-right">Of service to</h2>
+                    <h2 lang="en" class="bluebackground carousel-subtitle mb-5" data-aos="fade-left">Our District</h2>
                 </div>
-                <h3 class="m-4 w-50 mt-5 trayectoriasubtitle" >Está ligado al Leonismo de 1982 cuando su familia
-                    se unió al Club
-                    de Leones
-                    de Curridabat</h3>
+                <h3 lang="es" class="m-4 w-50 mt-5 trayectoriasubtitle" >Está ligado al Leonismo de 1982 cuando su familia
+                    se unió al Club de Leones de Curridabat</h3>
+                <h3 lang="en" class="m-4 w-50 mt-5 trayectoriasubtitle" >His ties to the Lions Club go back to 1982, when his family joined the Lions Club in Curridaba</h3>
                 <div class="col-lg-4" data-aos="fade-up">
-                    <p class="trayectoriaintro" >Participò en la fundación del Club LEO de su comunidad en 1987
+                    <p lang="es" class="trayectoriaintro" >Participò en la fundación del Club LEO de su comunidad en 1987
                     </p>
-                    <p class="trayectoriaintro" >Es socio activo de su Club desde hace 27 años cuando fue
+                    <p lang="es" class="trayectoriaintro" >Es socio activo de su Club desde hace 27 años cuando fue
                         juramentado como
                         León</p>
-                    <p class="trayectoriaintro" >Ha ocupado la presidencia de su Club en tres ocasiones; al igual
+                    <p lang="es" class="trayectoriaintro" >Ha ocupado la presidencia de su Club en tres ocasiones; al igual
                         que ha
                         ocupado otros cargos como la Secretaria,
                         Fiscalía, etc</p>
+                    
+                    
+                    <p lang="en" class="trayectoriaintro" >In 1987, He was a founding member of the LEO Club in his community</p>
+                    <p lang="en" class="trayectoriaintro" >He is an active member of his local Club since he was sworn in 27 years ago</p>
+                    <p lang="en" class="trayectoriaintro" >He has been elected Club President in three ocasions, and has also held different positions such as Club Secretary and Club Treasurer </p>
                 </div>
             </div>
        </div>
@@ -145,14 +175,15 @@
     <!-- A NIVEL DE DISTRITO -->
     <div class="carouselsubtitle d-flex flex-column justify-content-center align-items-center mb-1 mt-5"
         data-aos="fade-up" style="width:100vw;">
-        <h2 class="bluebackground-trayectoria trayectoria-title mt-5" data-aos="fade-left">A Nivel De</h2>
-        <h2 class="yellowbackground-trayectoria trayectoria-title" data-aos="fade-right">Distrito</h2>
-        <h3 class="m-4 trayectoriasubtitle" data-aos="fade-zoom-in"
-     data-aos-easing="ease-in-back"
-     data-aos-delay="300"
-     data-aos-offset="0">A nivel de Distrito D-4, ha fungido en cargos como:</h3>
+        <h2 lang="es" class="bluebackground-trayectoria trayectoria-title mt-5" data-aos="fade-left">A Nivel De</h2>
+        <h2 lang="es" class="yellowbackground-trayectoria trayectoria-title" data-aos="fade-right">Distrito</h2>
+        <h3 lang="es" class="m-4 trayectoriasubtitle">A nivel de Distrito D-4, ha fungido en cargos como:</h3>
+      
+        <h2 lang="en" class="bluebackground-trayectoria trayectoria-title mt-5" data-aos="fade-left">At District</h2>
+        <h2 lang="en" class="yellowbackground-trayectoria trayectoria-title" data-aos="fade-right">Level</h2>
+        <h3 lang="en" class="m-4 trayectoriasubtitle">In district D-4, he has served in positions such as:</h3>
         <div class="m-4 col-lg-5 col-sm-10" style="text-align: left;" >   
-            <ul>
+            <ul lang="es">
                 <li>Asesor del PDG Óscar Jiménez</li>
                 <li>Asesor Distrital LEO en dos ocasiones</li>
                 <li>Editor del Boletín Distrital</li>
@@ -169,37 +200,69 @@
                 <li>Asesor Distrital de LCIF desde 2018 y donde con su motivación nuestro Distrito ha aportado más de US$80.000</li>
                 <li>León Orientador del Club de Leones de Quepos</li>
             </ul>
+            <ul lang="en">
+                <li>Advisor to the PDG Óscar Jiménez</li>
+                <li>District LEO Adviser two times</li>
+                <li>District Newsletter Editor</li>
+                <li>Zone Manager twice</li>
+                <li>Region Manager on two occasions. During his tenure, he developed a joint operation including Lion Clubs and the Daniel Project to
+                    prepare a waiting room for young people in the San Juan de Dios Hospital </li>
+                <li>National Convention Advisor</li>
+                <li>Internet advisor</li>
+                <li>Member of the "Talent Night" Organizing Committee</li>
+                <li>Member of the of the 1997 Latin American LEO Meeting Organizing Committee</li>
+                <li>Member of the 2000 Istmania Convention Organizing Committee</li>
+                <li>Director of the 2022 Istmania Costa Rica Convention</li>
+                <li>LCIF District Advisor since 2018, leading our District to contribute more than US$80,000</li>
+                <li>Quepos Lions Club Guiding Lion</li>
+            </ul>
         </div>
     </div>
 
     <!-- LABORES INTERNACIONALES -->
     <div class="carouselsubtitle d-flex flex-column justify-content-center align-items-center mb-1 mt-3"
         data-aos="fade-up" style="width:100vw;">
-        <h2 class="yellowbackground-trayectoria trayectoria-title" data-aos="fade-right">Labores</h2>
-        <h2 class="bluebackground-trayectoria trayectoria-title " data-aos="fade-left">Internacionales</h2>
-        <h2 class="m-4 trayectoriasubtitle"  data-aos="fade-zoom-in"
-     data-aos-easing="ease-in-back"
-     data-aos-delay="300"
-     data-aos-offset="0">A nivel internacional ha desarrollado labores como:</h2>
+        <h2  lang="es" class="yellowbackground-trayectoria trayectoria-title" data-aos="fade-right">Labores</h2>
+        <h2  lang="es" class="bluebackground-trayectoria trayectoria-title " data-aos="fade-left">Internacionales</h2>
+        <h2  lang="es" class="m-4 trayectoriasubtitle">A nivel internacional ha desarrollado labores como:</h2>
+        
+        <h2 lang="en" class="yellowbackground-trayectoria trayectoria-title" data-aos="fade-right">International</h2>
+        <h2 lang="en" class="bluebackground-trayectoria trayectoria-title " data-aos="fade-left">Work</h2>
+        <h2 lang="en" class="m-4 trayectoriasubtitle">A nivel internacional ha desarrollado labores como:</h2>
         <div class="m-4 col-lg-5 col-sm-10" style="text-align: left;"> 
-            <ul>
+            <ul lang="es">
                 <li>Asesor LCIF de Distrito Múltiple</li>
                 <li>Director del Comité de Mercadeo de LCIF Latino</li>
-                <li>Instructor Certificado en Chicago en 2018, donde ya impartido entrenamientos en Institutos Leonísticos en Costa Rica,
+                <li>Instructor Certificado en Chicago en 2018. Ya ha impartido entrenamientos en Institutos Leonísticos en Costa Rica,
                 Ecuador, Belice, Centroamérica, México, República Dominicana, Chile, Perú y Estados Unidos</li>
                 <li>Invitado como panelista a dos webinars internacionales de Lions Clubs International en el 2019 y 2021</li>
                 <li>Presidente Fundador del Círculo de Coleccionistas de Pines de Itsmania</li>
                 <li>Autor intelectual de las Olimpiadas de Conocimiento de Istmania, que ahora serán adoptadas en lugares como Estados
                 Unidos y Rumania</li>
-                <li>Invitado como panelista a dos webinars internacionales de Lions Clubs International en el 2019 y 2021</li>
+            </ul>
+            <ul lang="en">
+                <li> Multiple District Chairperson</li>
+                <li> Director of the LCIF Latino Marketing Committee</li>
+                <li> Certified Instructor in Chicago in 2018. He has given trainings in Lions Institutes in Costa Rica, Ecuador,
+                    Belize, Central America, Mexico, Dominican Republic, Chile, Peru and the United States</li>
+                <li> Invited as a panelist to Lions Club International webinars in 2019 and 2021</li>
+                <li> Founding President of the Circle of Pine Collectors of Itsmania</li>
+                <li> Intellectual author behind the Istmanian Knowledge Olympics, which are being adopted in places like the United
+                    States and
+                    Romania</li>
             </ul>
             <!-- <div class="m-4" style="text-align: center;">
                 <h4 class="trayectoriasubtitle">Primer Latinoamericano en lograr el Doctorado en Leonismo</h4>
             </div> -->
-            <ul>
+            <ul lang="es">
                 <li>Recién se graduó en el mes de setiembre de un Doctorado en Leonismo en LIONS UNIVERSITY del Foro de Liderazgo de
                     Estados
                     Unidos y Canadá en Iowa, convirtiéndose en el primer León de América Latina en lograr esto</p></li>
+            </ul>
+            <ul lang="en">
+                <li> He recently graduated in September with a Doctorate in Lions at LIONS UNIVERSITY from the United States-Canada
+                                Leadership Forum in Iowa, becoming the first Lion in Latin America to achieve this</li>
+
             </ul>
         </div>
     </div>
@@ -207,13 +270,13 @@
     <!-- RECONOCIMIENTOS -->
     <div class="carouselsubtitle d-flex flex-column justify-content-center align-items-center mb-1 mt-3" data-aos="fade-up"
         style="width:100vw;">
-        <h2 class="bluebackgroundlast trayectoria-title mt-5" data-aos="fade-left">Reconocimientos</h2>
-        <h2 class="m-4 trayectoriasubtitle" data-aos="fade-zoom-in"
-     data-aos-easing="ease-in-back"
-     data-aos-delay="300"
-     data-aos-offset="0">Algunos de los reconocimientos del C.L. Luis Diego son:</h2>
+        <h2 lang="es" class="bluebackgroundlast trayectoria-title mt-5" data-aos="fade-left">Reconocimientos</h2>
+        <h2 lang="es" class="m-4 trayectoriasubtitle" >Algunos de los reconocimientos del C.L. Luis Diego son:</h2>
+        
+        <h2 lang="en" class="bluebackgroundlast trayectoria-title mt-5" data-aos="fade-left">Reconocimientos</h2>
+        <h2 lang="en" class="m-4 trayectoriasubtitle" >Algunos de los reconocimientos del C.L. Luis Diego son:</h2>
         <div class="m-4 col-lg-5 col-sm-10" style="text-align: left;">
-            <ul>
+            <ul lang="es">
                 <li>2 veces León del Año de su Club</li>
                 <li>5 Certificados de Apreciación de Presidente Internacional</li>
                 <li>2 Certificados de Apreciación del Presidente de la Fundación</li>
@@ -224,15 +287,28 @@
                 <li>Múltiples premios de Gobernadores de Distrito incluyendo un placa del Consejo de Gobernadores 2020-2021</li>
                 <li>Es adicionalmente socio llave por haber patrocinado a más de 10 socios en su Club</li>
             </ul>
+            <ul lang="en">
+                <li> 2 times Lion of the Year of his Club</li>
+                <li>5 International President Certificates of Appreciation</li>
+                <li>2 Certificates of Appreciation from the President of the Foundation</li>
+                <li>2 times deserving of the "Hands that Help" award from the Foundation</li>
+                <li>Founding President of the Circle of Pine Collectors of Itsmania</li>
+                <li>2 Presidential Medals </li>
+                <li>2 Foundation President Medals, LCIF Multiple District Governor awards including a 2020-2021 Board of Governors
+                    plaque</li>
+                <li>He is additionally a key member for having sponsored more than 10 members in his Club</li>
+            </ul>
         </div>  
     </div>
-    
+
     <!--ADICIONALMENTE -->
     <div class="carouselsubtitle d-flex flex-column justify-content-center align-items-center mb-1 mt-3" data-aos="fade-up"
         style="width:100vw;">
-        <h2 class="yellowbackgroundlast trayectoria-title" data-aos="fade-right">Adicionalmente</h2>
+        <h2 lang="es" class="yellowbackgroundlast trayectoria-title" data-aos="fade-right">Adicionalmente</h2>
+        
+        <h2 lang="en" class="yellowbackgroundlast trayectoria-title" data-aos="fade-right">Adicionalmente</h2>
         <div class="m-4 col-lg-5 col-sm-10" style="text-align: left;">
-            <ul>
+            <ul lang="es">
                 <li>Demuestra su apoyo incondicional a LCIF siendo Amigo de Melvin Jones progresivo de sexto nivel y reconocido como León de
                 Compromiso por sus aportes</li>
                 <li>Ha participado en múltiples conferencias distritales LEO, Convenciones Nacionales, Convenciones de Istmania, 3
@@ -244,15 +320,31 @@
                 <li>Es hijo de la pasada gobernadora Eunice Castillo, casado felizmente desde hace 19 años con la Dama Leona Cinthya y
                 comparte su amor por el Leonismo con su hijo Andrés Daniel</li>
             </ul>
+            <ul lang="en">
+                <li>Show your unconditional support for LCIF by being a sixth-level progressive Melvin Jones Friend and recognized as a
+                    Lion
+                    of Commitment for your contributions</li>
+                <li>He has participated in multiple LEO district conferences, National Conventions, Istmanian Conventions, 3
+                    International
+                    Conventions, FOLACs and 3 Forums in the United States and Canada</li>
+                The CL Luis Diego is a business administrator with an emphasis in Marketing and has just finished a Master's Degree in
+                Business Administration; for 25 years it has been linked to the maritime cargo transport sector
+                <li>He is currently manager for the Caribbean Area where he is in charge of nearly 20 countries with different languages
+                    ​​and cultures</li>
+                <li>He is the son of former Governor Eunice Castillo, happily married for 19 years to Lady Leona Cinthya and shares his
+                    love
+                    for Leonism with his son Andrés Daniel</li>
+            </ul>
         </div> 
         <img src="./img/Logo Orgullo.png" alt="Luis Diego Logo">
     </div>
 
-
     <footer id="footersection">
         <div class="d-flex align-items-center justify-content-center flex-column">
-            <div class="d-flex align-items-center text-center flex-column mt-5">
-                <h1 class="trayectoriasubtitle text-white">Mantengamonos en contacto</h1>
+            <div class="d-flex align-items-center text-center flex-column mt-5" style="min-width: 550px;">
+                <h1 lang="es" class="trayectoriasubtitle text-white">Mantengamonos en contacto</h1>
+    
+                <h1 lang="en" class="trayectoriasubtitle text-white">Let's stay in contact</h1>
                 <form class=" col-lg-8 col-md-12 col-sm-12 col-12 mt-4">
                     <div class="mt-2">
                         <input type="text" class="form-control" id="name" name="name" placeholder="Nombre" required="">
@@ -265,7 +357,9 @@
                             required="">
                     </div>
                     <div class="mt-2 pb-3 d-grid gap-2">
-                        <button class="btn btn-warning " type="submit">¡SIRVAMOS JUNTOS!</button>
+                        <button lang="es" class="btn btn-warning " type="submit">¡SIRVAMOS JUNTOS!</button>
+    
+                        <button lang="en" class="btn btn-warning " type="submit">LET'S SERVE TOGETHER!</button>
                     </div>
                 </form>
             </div>
@@ -290,20 +384,29 @@
                 </svg>
             </div>
             <div class="text-center text-white mt-5 col-lg-3">
-                <h1 class="trayectoriasubtitle">Compromiso</h1>
+                <h1 lang="es" class="trayectoriasubtitle">Mi Misión</h1>
+                <h1 lang="en" class="trayectoriasubtitle">My Mission</h1>
                 <h6>Este es un texto para llenar le hueco con lo que promovemos. Al infinito y el mas alla</h6>
             </div>
             <div class="text-center text-white mt-5 mb-5 d-flex flex-column justify-content-center">
-                <h1 class="trayectoriasubtitle">Navegar</h1>
-                <a class=" text-white" href="#">Inicio</a>
-                <a class="text-white" href="./mitrayectoria.html">Mi Trayectoria</a>
+                <h1 lang="es" class="trayectoriasubtitle">Navegar</h1>
+                <a lang="es" class=" text-white" href="#">Inicio</a>
+                <a lang="es" class="text-white" href="./mitrayectoria.html">Mi Trayectoria</a>
+    
+                <h1 lang="en" class="trayectoriasubtitle">Navigate</h1>
+                <a lang="en" class=" text-white" href="#">Home</a>
+                <a lang="en" class="text-white" href="./mitrayectoria.html">My Journey</a>
             </div>
+    
         </div>
     </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <!-- build:js js/main.js -->
     <script src="js/scripts.js"></script>
