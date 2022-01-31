@@ -1,1 +1,1 @@
-AOS.init(),$('[lang="en"]').hide(),$("#switch-lang").click(function(){$('[lang="es"]').toggle(),$('[lang="en"]').toggle(),console.log("working")});
+AOS.init(),$('[lang="en"]').hide(),$("#switch-lang").click(function(){$('[lang="es"]').toggle(),$('[lang="en"]').toggle(),console.log("working")}),$("#switch-lang-mobile").click(function(){$('[lang="es"]').toggle(),$('[lang="en"]').toggle(),console.log("working")}),$(".navbar-toggler").click(function(){console.log("click"),window.pageYOffset<470&&$("#gradientOverlay-mobile").toggleClass("headergradient")});

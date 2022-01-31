@@ -64,10 +64,6 @@
                                                     rgba(2, 81, 151, 0.7) 97%);">
             <div class="container-fluid">
                 <a class="navbar-brand brandfont" href="#">CL Luis Diego Aguilar</a>
-                <button id="switch-lang-mobile" type="button" class="btn btn-link text-decoration-none">
-                    <span lang="es">🇺🇸</span>
-                    <span lang="en">🇨🇷</span>
-                </button>
                 <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -79,8 +75,14 @@
                         <li class="nav-item">
                             <a class="nav-link text-white pt-3 mobilemenufont" href="./index.html">Inicio</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mb-5">
                             <a class="nav-link text-white mobilemenufont" href="./mitrayectoria.html">Mi Trayectoria</a></a>
+                        </li>
+                        <li class="mt-5 d-flex flex-column align-items-center justify-content-center">
+                            <button id="switch-lang-mobile" type="button" class="btn btn-link text-decoration-none text-white">
+                                <img src="./img/1608752_language_icon (1).svg" class="filter-white" alt="">
+                                <h6>Lang</h6>
+                            </button>
                         </li>
                     </ul>
                 </div>
@@ -90,7 +92,7 @@
 
         <!-- GRADIENT & MOBILE LANDING IMGS -->
         <!-- DESKTOP LANDING PAGE -->
-        <div class="d-none d-lg-block">
+        <div class="d-none d-lg-block d-md-block">
             <div class="headercontainer">
                 <div id="gradientOverlay" class="headergradient-desktop landing-container d-flex flex-column align-items-start ">
                     <div class="d-flex flex-column align-items-center "style="width:50vw;">
@@ -106,7 +108,7 @@
             </div>
         </div>
         <!-- MOBILE LANDING PAGE -->
-        <div class="d-lg-none">
+        <div class="d-lg-none d-md-none">
             <div class="headercontainer-mobile ">
                 <div class=" headercontainer-mobiletwo">
                     <div id="gradientOverlay-mobile" class="headergradient">
@@ -119,8 +121,10 @@
     <div id="emailcalltoaction" class="d-none d-lg-block d-flex justify-content-center flex-column align-items-center pt-4 p-3">
         <div class="d-flex align-items-center justify-content-center flex-column"></div>
         <div class=" d-flex flex-column display-column align-items-center justify-content-center titleTwo animate__animated animate__fadeIn" >
+            <!-- es -->
             <h2 lang="es">Expandamos <span class="text-warning">Juntos</span> el ¡Orgullo de Ser León!</h2>
-            <h2 lang="en">Let's Promote <span class="text-warning">Together</span>"Proud to be a Lion!"</h2>
+            <!-- en -->
+            <h2 lang="en">Let's Promote <span class="text-warning">Together</span> "Proud to be a Lion!"</h2>
         </div> 
         <form class="row g-4 mt-2 pb-3  col-lg-12 col-md-12 col-sm-12 col-12 d-flex flex-row align-items-center justify-content-center" data-aos="fade-up">
             <div class="col-auto">
@@ -140,13 +144,13 @@
     </div>
 
     <!-- EMAIL CALL TO ACTION MOBILE  -->
-    <div id="emailcalltoaction" class=" d-lg-none d-flex align-items-center justify-content-center flex-column">
+    <div id="emailcalltoaction" class="pt-1 d-lg-none d-flex align-items-center justify-content-center flex-column">
         <div
             class="  pt-3 d-flex flex-column display-column align-items-center justify-content-center titleTwo animate__animated animate__fadeIn">
                 <h2 lang="es">Expandamos <span class="text-warning">Juntos</span> el</h2>
                 <h2 lang="es">¡Orgullo de Ser León!</h2>
 
-                <h2 lang="en">Let's Promote <span class="text-warning">Together</span> el</h2>
+                <h2 lang="en">Let's Promote <span class="text-warning">Together</span>
                 <h2 lang="en">"Proud to be a Lion!"</h2>
         </div>
         <form class="col-md-8 col-sm-10 col-12" data-aos="fade-up">
