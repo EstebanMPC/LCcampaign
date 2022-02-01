@@ -663,7 +663,7 @@ body {
 }
 
 /* Tablet Portrait */
-@media only screen and (max-device-width: 912px) and (max-device-height: 1368px) {
+@media only screen and (max-device-width: 912px) and (min-device-height: 1000px) and (max-device-height: 1368px) {
   .headercontainer {
     background: url(../img/tabletportraitlanding.jpg);
     background-position: right;
