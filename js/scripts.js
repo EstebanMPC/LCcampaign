@@ -25,25 +25,40 @@ $('.navbar-toggler').click(function(){
     } 
 })
 
-// Toggle background color of navbar after scrolling past landing page
-// $('document').ready(function() {
-//     if (window.pageYOffset > 470){
-//     console.log("test")
-//     } 
-// })
+
+// Add class to Desktop navbar
+  $(document).scroll(function () {
+    if (window.pageYOffset > 470) {
+        $('nav').addClass('desktop-navbar-color')
+    } else if (window.pageYOffset < 470) {
+        $('nav').removeClass('desktop-navbar-color')
+    }
+});
 
 
- 
+// Index timer 
+var x = setInterval(function() {
+    if (!$('#body-home').length) return;
+    var countDate = new Date("April 23, 2022 12:00:00").getTime();
+    var now = new Date().getTime();
+    var gap = countDate - now;
 
-    // $('nav').css(backgroundImage = "linear-gradient(266deg, rgba(2, 0, 36, 0.2553396358543417) 0%, rgba(255, 205, 5, 0.7) 0%, rgba(2, 81, 151, 0.7) 97%);")
+    var second = 1000;
+    var minute = second * 60;
+    var hour = minute * 60;
+    var day = hour * 24;
+    
+    const textDay = Math.floor(gap / day);
+    const textHour = Math.floor((gap % day) /  hour);
+    const textMinute = Math.floor((gap % hour) /  minute);
+    const textSecond= Math.floor((gap % minute) /  second);
 
+    document.querySelector('.day').innerText = textDay
+    document.querySelector('.hour').innerText = textHour
+    document.querySelector('.minute').innerText = textMinute
+    document.querySelector('.second').innerText = textSecond
+    
+}, 1000);
+// Event is at 12pm Central, so the "hour", "min", & "sec" values will read as "0" at 12pm every day, and one "day" will be subtracted
 
-// document.addEventListener('scroll', function () {
-//     navBar = document.getElementById('navigation-bar');
-
-//     if (window.pageYOffset > 800) {
-//         navBar.style.backgroundImage = "linear-gradient(266deg, rgba(2, 0, 36, 0.2553396358543417) 0%, rgba(255, 205, 5, 0.7) 0%, rgba(2, 81, 151, 0.7) 97%);"
-//         console.log("itwo")
-//     } 
-// });
-
+console.log(window.location)

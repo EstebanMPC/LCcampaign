@@ -24,8 +24,7 @@
 
 <body>
     <header>
-        <!-- Navbar Desktop -->
-        <nav id="navigation-bar" class="d-none d-lg-block navbar fixed-top navbar-expand-lg navbar-dark" style="">
+        <nav id="navigation-bar" class="d-none d-lg-block d-md-block navbar fixed-top navbar-expand-lg navbar-dark" style="">
             <div class="container-fluid">
                 <a class="navbar-brand brandfont" href="./index.html">CL Luis Diego Aguilar</a>
                 <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -59,17 +58,13 @@
         </nav>
         
         <!-- Navbar Mobile -->
-        <nav class="d-lg-none navbar fixed-top navbar-expand-lg navbar-dark p-md-3" style="background-image: linear-gradient(
+        <nav class="d-lg-none d-md-none navbar fixed-top navbar-expand-lg navbar-dark p-md-3" style="background-image: linear-gradient(
                                                             266deg, 
                                                             rgba(2, 0, 36, 0.2553396358543417) 0%,
                                                             rgba(255, 205, 5, 0.7) 0%,
                                                             rgba(2, 81, 151, 0.7) 97%);">
             <div class="container-fluid">
                 <a class="navbar-brand brandfont" href="#">CL Luis Diego Aguilar</a>
-                <button id="switch-lang-mobile" type="button" class="btn btn-link text-decoration-none">
-                    <span lang="es">🇺🇸</span>
-                    <span lang="en">🇨🇷</span>
-                </button>
                 <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -78,11 +73,23 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <div class="mx-auto"></div>
                     <ul class="navbar-nav mobile-long-menu">
-                        <li class="nav-item">
-                            <a class="nav-link text-white pt-3 mobilemenufont" href="./index.html">Inicio</a>
+                        <li class="nav-item d-flex flex-row justify-content-between">
+                            <a lang="es" class="nav-link text-white pt-3 mobilemenufont" href="./index.html">Inicio</a>
+                            <a lang="en" class="nav-link text-white pt-3 mobilemenufont" href="./index.html">Home</a>
+                            <button id="switch-lang-mobile" type="button"
+                                class="btn btn-link text-decoration-none text-white p-r5 lang-btn">
+                                <span>🌐</span>
+                                <h6>Lang</h6>
+                            </button>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white mobilemenufont" href="./mitrayectoria.html">Mi Trayectoria</a></a>
+                            <a lang="es" class="nav-link text-white mobilemenufont" href="./mitrayectoria.html">Mi
+                                Trayectoria</a></a>
+                            <a lang="en" class="nav-link text-white mobilemenufont" href="./mitrayectoria.html">My
+                                Journey</a></a>
+                        </li>
+                        <li class=" d-flex flex-column align-items-start">
+        
                         </li>
                     </ul>
                 </div>
@@ -139,26 +146,28 @@
        </div>
 
         <!-- MI TRAYECTORIA MOBILE LANDING PAGE-->
-        <div class="mobileparagraph  d-lg-none" style="width:100vw;">
+        <div class="mobileparagraph d-lg-none" >
             <div class="paragraphImage-mobile-trayectoria">
                 <div class="paragraphcontainer-mobile"></div>
             </div>
-            <div data-aos="fade-up">
-                <h1 class="trayectoriatitle-mobile ">TRAYECTORIA</h1>
-            </div>
-            <div class="m-4 col-lg-5 col-sm-10" >
-                <p class="trayectoriaintro" data-aos="fade-up">Está ligado al Leonismo de 1982 cuando su familia se unió al Club
-                    de Leones
-                    de Curridabat</p>
-                <p class="trayectoriaintro" data-aos="fade-up">Participò en la fundación del Club LEO de su comunidad en 1987
-                </p>
-                <p class="trayectoriaintro" data-aos="fade-up">Es socio activo de su Club desde hace 27 años cuando fue
-                    juramentado como
-                    León</p>
-                <p class="trayectoriaintro" data-aos="fade-up">Ha ocupado la presidencia de su Club en tres ocasiones; al igual
-                    que ha
-                    ocupado otros cargos como la Secretaria,
-                    Fiscalía, etc</p>
+            <div class=" d-flex flex-column align-items-center" style="width:100vw;">
+                <div data-aos="fade-up">
+                    <h1 class="trayectoriatitle-mobile ">TRAYECTORIA</h1>
+                </div>
+                <div class="m-4 col-lg-5 col-sm-10">
+                    <p class="trayectoriaintro" data-aos="fade-up">Está ligado al Leonismo de 1982 cuando su familia se unió al Club
+                        de Leones
+                        de Curridabat</p>
+                    <p class="trayectoriaintro" data-aos="fade-up">Participò en la fundación del Club LEO de su comunidad en 1987
+                    </p>
+                    <p class="trayectoriaintro" data-aos="fade-up">Es socio activo de su Club desde hace 27 años cuando fue
+                        juramentado como
+                        León</p>
+                    <p class="trayectoriaintro" data-aos="fade-up">Ha ocupado la presidencia de su Club en tres ocasiones; al igual
+                        que ha
+                        ocupado otros cargos como la Secretaria,
+                        Fiscalía, etc</p>
+                </div>
             </div>
         </div>
     </header>
@@ -333,7 +342,7 @@
 
     <footer id="footersection">
         <div class="d-flex align-items-center justify-content-center flex-column">
-            <div class="d-flex align-items-center text-center flex-column mt-5" style="min-width: 550px;">
+            <div class="d-flex align-items-center text-center flex-column mt-5" style="min-width: 50px;">
                 <h1 lang="es" class="trayectoriasubtitle text-white">Mantengamonos en contacto</h1>
     
                 <h1 lang="en" class="trayectoriasubtitle text-white">Let's stay in contact</h1>
