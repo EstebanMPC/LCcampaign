@@ -16,6 +16,7 @@ $('#switch-lang-mobile').click(function () {
     $('[lang="es"]').toggle();
     $('[lang="en"]').toggle();
     console.log("working")
+    
 });
 
 // Toggle mobile gradient so that it doesnt clash with the transparency of the menu when its open
