@@ -8,6 +8,7 @@ $('#switch-lang').click(function () {
     $('[lang="es"]').toggle();
     $('[lang="en"]').toggle();
     console.log("working")
+
 });
 
 // Lang attribute for mobile
@@ -15,6 +16,14 @@ $('#switch-lang-mobile').click(function () {
     $('[lang="es"]').toggle();
     $('[lang="en"]').toggle();
     console.log("working")
+
+    if ($(this).attr('[lang="es"]')){
+        localStorage.setItem("span", JSON.stringify('[lang="es"]'))
+        localStorage.remove('[lang="en"]')
+    } else if ($(this).attr('[lang="en"]')){
+        localStorage.setItem("eng", JSON.stringify('[lang="en"]'))
+        localStorage.remove('[lang="es"]')
+    }
 });
 
 // Toggle mobile gradient so that it doesnt clash with the transparency of the menu when its open
@@ -61,4 +70,4 @@ var x = setInterval(function() {
 }, 1000);
 // Event is at 12pm Central, so the "hour", "min", & "sec" values will read as "0" at 12pm every day, and one "day" will be subtracted
 
-console.log(window.location)
+

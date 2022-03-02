@@ -156,9 +156,9 @@
   padding: 0px;
 }
 
-.lang-btn {
+/* .lang-btn {
   margin-right: 20px;
-}
+} */
 
 /* LANDING PAGE */
 .landingpage {
@@ -209,6 +209,11 @@
 .headercontainer-mobiletwo {
   background: url(../img/Logo_Campana_300x220.png) no-repeat center center;
   height: 135vh;
+  display: block;
+}
+
+#mc_embed_signup {
+  z-index: 1;
 }
 
 /* DESKTOP HERO */
@@ -529,7 +534,7 @@ li {
 .mobile-long-menu {
   width: 100vw;
   height: 100vh;
-  margin-right: 100px;
+  /* margin-right: 100px; */
 }
 
 .btn-warning {
@@ -631,7 +636,7 @@ body {
   }
 }
 
-@media only screen and (max-device-height: 480px) and (max-device-width: 915px) and (orientation: landscape) {
+@media only screen and (min-device-height: 376px) and (max-device-height: 480px) and (max-device-width: 915px) and (orientation: landscape) {
   .headercontainer {
     background: url(../img/IMG_0230.jpg);
     background-position: right;
