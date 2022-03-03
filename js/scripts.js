@@ -40,7 +40,7 @@ $('.navbar-toggler').click(function(){
 
 // Index timer 
 var x = setInterval(function() {
-    if(window.location.pathname == '/index.html') {
+    if(window.location.pathname == '/' || window.location.pathname == '/index.html' ) {
         if (!$('#body-home').length) return;
         var countDate = new Date("April 23, 2022 12:00:00").getTime();
         var now = new Date().getTime();
