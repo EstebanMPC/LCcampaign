@@ -2,21 +2,39 @@
 AOS.init();
 
 // HTML language attribute toggle
-$('[lang="en"]').hide();
+
+$(document).ready(function () {
+    const currentLanguage = localStorage.getItem('current-language');
+    $('#homeOption').hide()
+
+    if(currentLanguage == 'eng'){
+        $('[lang="es"]').hide();
+    } else if (currentLanguage == 'span'){
+        $('[lang="en"]').hide();
+    }
+});
 
 $('#switch-lang').click(function () {
     $('[lang="es"]').toggle();
     $('[lang="en"]').toggle();
-    console.log("working")
 
+    if($('[lang="en"]').is(':visible')){
+        localStorage.setItem('current-language', 'eng')
+    } else if($('[lang="es"]').is(':visible')){
+        localStorage.setItem('current-language', 'span')
+    }
 });
 
 // Lang attribute for mobile
 $('#switch-lang-mobile').click(function () {
     $('[lang="es"]').toggle();
     $('[lang="en"]').toggle();
-    console.log("working")
-    
+
+    if($('[lang="en"]').is(':visible')){
+        localStorage.setItem('current-language', 'eng')
+    } else if($('[lang="es"]').is(':visible')){
+        localStorage.setItem('current-language', 'span')
+    }
 });
 
 // Toggle mobile gradient so that it doesnt clash with the transparency of the menu when its open
@@ -32,8 +50,10 @@ $('.navbar-toggler').click(function(){
   $(document).scroll(function () {
     if (window.pageYOffset > 470) {
         $('nav').addClass('desktop-navbar-color')
+        $('#homeOption').show()
     } else if (window.pageYOffset < 470) {
         $('nav').removeClass('desktop-navbar-color')
+        $('#homeOption').hide()
     }
 });
 
