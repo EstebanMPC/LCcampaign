@@ -14,6 +14,8 @@ $(document).ready(function () {
     } else {
         $('[lang="en"]').hide()
     }
+
+
 });
 
 $('#switch-lang').click(function () {
@@ -57,6 +59,20 @@ $('.navbar-toggler').click(function(){
         $('#homeOption').hide()
     }
 });
+
+$(window).on('resize orientationchange', function(){
+    if (window.innerWidth > window.innerHeight){
+        $('#desktopLanding').addClass('d-block')
+        $('#desktopLanding').removeClass('d-none')
+        $('#mobileLanding').addClass('d-none')
+    } else if ( window.innerHeight > window.innerWidth ){
+        $('#desktopLanding').removeClass('d-block')
+        $('#desktopLanding').addClass('d-none')
+        $('#mobileLanding').removeClass('d-none')
+    }
+});
+
+
 
 
 // Index timer 
