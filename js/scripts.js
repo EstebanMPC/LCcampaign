@@ -11,6 +11,8 @@ $(document).ready(function () {
         $('[lang="es"]').hide();
     } else if (currentLanguage == 'span'){
         $('[lang="en"]').hide();
+    } else {
+        $('[lang="en"]').hide()
     }
 });
 
@@ -22,7 +24,7 @@ $('#switch-lang').click(function () {
         localStorage.setItem('current-language', 'eng')
     } else if($('[lang="es"]').is(':visible')){
         localStorage.setItem('current-language', 'span')
-    }
+    } 
 });
 
 // Lang attribute for mobile
@@ -44,7 +46,6 @@ $('.navbar-toggler').click(function(){
         $('#gradientOverlay-mobile').toggleClass('headergradient')
     } 
 })
-
 
 // Add class to Desktop navbar
   $(document).scroll(function () {
@@ -83,12 +84,3 @@ var x = setInterval(function() {
     }
 }, 1000);
 // Event is at 12pm Central, so the "hour", "min", & "sec" values will read as "0" at 12pm every day, and one "day" will be subtracted
-
-
-//     if ($(this).attr('[lang="es"]')){
-    //     localStorage.setItem("span", JSON.stringify('[lang="es"]'))
-    //     localStorage.remove('[lang="en"]')
-    // } else if ($(this).attr('[lang="en"]')){
-    //     localStorage.setItem("eng", JSON.stringify('[lang="en"]'))
-    //     localStorage.remove('[lang="es"]')
-    // }
