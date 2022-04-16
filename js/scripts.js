@@ -1,7 +1,6 @@
 
 AOS.init();
 
-
 $(window).on('resize orientationchange', function(){
     if (window.innerWidth > window.innerHeight){
         $('#desktopLanding').addClass('d-block')
